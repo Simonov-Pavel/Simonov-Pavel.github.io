@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <title>Catalog</title>
+  <title>Bee.Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
         <div class='top'>
             <div id='logo'><h1>Be.Pro</h1></div>
-                    <input type='checkbox' id='check_menu'>
+                <input type='checkbox' id='check_menu'>
                     <label for='check_menu' class='menu_btn'>
                         <span></span>
                     </label>
                 <div class='top_menu'>
-                    <nav>
+                <nav>
                     <ul>
                         <li>
                             <input type='checkbox' id='check'>
@@ -23,9 +25,10 @@
                                 <a>HOME<span class="arrow down"></span></a> 
                             </label>
                             <ul>
-                                <li><a href='index.html'>ГЛАВНАЯ</a></li>
-                                <li><a href='catalog.html'>CATALOG</a></li>
-                                <li><a href='product.html'>PRODUCT</a></li>
+                                <li><a href='#'>ГЛАВНАЯ</a></li>
+                                <li><a href='catalog.html'>КАТАЛОГ</a></li>
+                                <li><a href='#'>SUBITEM 3</a></li>
+                                <li><a href='#'>SUBITEM 4</a></li>
                             </ul>
                         </li>
                         <li><a href='#'>SHOP</a></li>
@@ -34,13 +37,401 @@
                         <li><a href='#'>BLOG</a></li>
                         <li><a href='#'>ELEMENTS</a></li>
                     </ul>
-                    </nav>
+                </nav>
                 </div>
-                <div class='icons'>
-                    <div id='card'><img src='img/card.png' alt=''><span>3</span></div>
-                    <div><img src='img/search.png' alt=''></div>
-                </div>
+            <div class='singup'>
+                <a href='#'>LOGIN</a>
+                <a href='#'>SIGNUP</a>
+            </div>
+            <div class='icons'>
+                <div id='card'><img src='img/card.png' alt=''><span>3</span></div>
+                <img src='img/search.png' alt=''>
+            </div>
         </div>
     </header>
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article>
+                                <img src="img/slider_top.png" alt='slider'>
+                                <p>Слайд 1</p>
+                                <div>
+                                    <h1>New Arrival</h1>
+                                    <button>BUY NOW</button>
+                                </div>
+                            </article>
+							<article>
+                                <img src="img/slider_top.png" alt='slider'>
+                                <p>Слайд 2</p>
+                                <div>
+                                    <h1>New Arrival</h1>
+                                    <button>BUY NOW</button>
+                                </div>
+                            </article>
+							<article>
+                                <img src="img/slider_top.png" alt='slider'>
+                                <p>Слайд 3</p>
+                                <div>
+                                    <h1>New Arrival</h1>
+                                    <button>BUY NOW</button>
+                                </div>
+                            </article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+				</div>
+			</article>
+        <div class='clear'></div>
+    <main>
+        <section id='feature'>
+            <div class='feature'>
+                <div class='img'><img src='img/shiping.png' alt='#'></div>
+                <div>
+                    <p class='bold'>Free Shipping</p>
+                    <p class='lait'>Oders over $99</p>
+                </div>
+            </div>
+            <div class='feature'>
+                <div class='img'><img src='img/return.png' alt='#'></div>
+                <div>
+                    <p class='bold'>30 days return</p>
+                    <p class='lait'>if goods have problem</p>
+                </div>
+            </div>
+            <div class='feature'>
+                <div class='img'><img src='img/payment.png' alt='#'></div>
+                <div>
+                    <p class='bold'>Secure payment</p>
+                    <p class='lait'>100% secure payment</p>
+                </div>
+            </div>
+            <div class='feature'>
+                <div class='img'><img src='img/support.png' alt='#'></div>
+                <div>
+                    <p class='bold'>24h support</p>
+                    <p class='lait'>Ded cated Support</p>
+                </div>
+            </div>
+        </section>
+        <section id='product'>
+            <div class='product_popular' id='cart_1'>
+                <img src='img/product.png' alt='#'>
+                <h3>POPULAR PRODUCT</h3>
+                <p>More Product<span>&rarr;</span></p>
+            </div>
+            <div class='product sale' id='cart_2'>
+                <img src='img/product_1.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Essential cotton-blend</p>
+                    <p>
+                        <span class='old_price'>$200.00 USD</span>
+                        <span class='price'>$100.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product' id='cart_3'>
+                <img src='img/product_2.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Flecked cotton-blend</p>
+                    <p>
+                        <span class='old_price'></span>
+                        <span class='price'>$175.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product' id='cart_4'>
+                <img src='img/product_3.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Striped cotton-shirt</p>
+                    <p>
+                        <span class='old_price'></span>
+                        <span class='price'>$200.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product' id='cart_5'>
+                <img src='img/product_4.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>V-neek cotton-shirt</p>
+                    <p>
+                        <span class='old_price'></span>
+                        <span class='price'>$100.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product_new new' id='cart_6'>
+                <img src='img/product_5.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='new_text'>
+                    <p>LIFESTYLE</p>
+                    <h2>New Now: Striped cotton</h2>
+                    <div class='button_price'><p>$50.00 USD<span></span>BY NOW</p></div>
+                </div>
+            </div>
+            <div class='product' id='cart_7'>
+                <img src='img/product_6.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Message cotton-shirt</p>
+                    <p>
+                        <span class='old_price'></span>
+                        <span class='price'>$100.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product sale' id='cart_8'>
+                <img src='img/product_7.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Sequin star t-shirt</p>
+                    <p>
+                        <span class='old_price'>$200.00 USD</span>
+                        <span class='price'>$100.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product' id='cart_9'>
+                <img src='img/product_8.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Rufle sleeve t-shirt</p>
+                    <p>
+                        <span class='old_price'></span>
+                        <span class='price'>$175.00 USD</span>
+                    </p>
+                </div>
+            </div>
+            <div class='product' id='cart_10'>
+                <img src='img/product_9.png' alt='#'>
+                <div class='button'><span></span></div>
+                <div class='product_text'>
+                    <p>Double layer top</p>
+                    <p>
+                        <span class='old_price'></span>
+                        <span class='price'>$200.00 USD</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div><span><img src='img/strelki.png' alt=''>LOAD MORE</span></div>
+        <section id='main_slide'>
+            <input type='radio' name='main_slide' id='slide_1' checked>
+            <article>
+                <div class='main_slide'>
+                    <img src='img/banner.png' alt=''>
+                </div>
+                <div class='text'>
+                    <p>EVENT 1</p>
+                    <h1>London Fashion Week September 2017</h1>
+                    <time>15th - 19th September 2017</time>
+                </div>
+                <div class="nav">
+                    <label for="slide_1" class="prev">&#x2039;</label>
+                    <label for="slide_2" class="next">&#x203a;</label>
+                </div>
+            </article>
+            <input type='radio' name='main_slide' id='slide_2'>
+            <article>
+                <div class='main_slide'>
+                    <img src='img/banner.png' alt=''>
+                </div>
+                <div class='text'>
+                    <p>EVENT 2</p>
+                    <h1>London Fashion Week September 2017</h1>
+                    <time>15th - 19th September 2017</time>
+                </div>
+                <div class="nav">
+                    <label for="slide_1" class="prev">&#x2039;</label>
+                    <label for="slide_3" class="next">&#x203a;</label>
+                </div>
+            </article>
+            <input type='radio' name='main_slide' id='slide_3'>
+            <article>
+                <div class='main_slide'>
+                    <img src='img/banner.png' alt=''>
+                </div>
+                <div class='text'>
+                    <p>EVENT 3</p>
+                    <h1>London Fashion Week September 2017</h1>
+                    <time>15th - 19th September 2017</time>
+                </div>
+                <div class="nav">
+                    <label for="slide_2" class="prev">&#x2039;</label>
+                    <label for="slide_4" class="next">&#x203a;</label>
+                </div>
+            </article>
+            <div class='switchs'>
+                <label for='slide_1' class='switch' id='switch_1'></label>
+                <label for='slide_2' class='switch' id='switch_2'></label>
+                <label for='slide_3' class='switch' id='switch_3'></label>
+            </div>
+        </section>
+        <section id='product_bottom'>
+            <div>
+                <img src='img/product_left.png' alt=''>
+                <div class='text_bottom'>
+                    <p>SUITS</p>
+                    <h2>Slim Fit Prince of<br/>Wales Check Wool</h2>
+                    <ul>
+                        <li>2,295.00 USD</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src='img/product_right.png' alt=''>
+                <div class='text_bottom'>
+                    <p>SCARVES</p>
+                    <h2>Lightweight check<br/>wool cashmere scarf</h2>
+                    <ul>
+                        <li>425.00 USD</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src='img/product_bottom_1.png' alt=''>
+                <div class='text_bottom'>
+                    <p>NUMBER OF DAY</p>
+                    <span>197</span>
+                    <h2>Combo Sale Off<br/>Up To 50%</h2>
+                    <div><p>Read More</p></div>
+                </div>
+            </div>
+            <div class='block'>
+                <div id='top'>
+                    <div>
+                        <p>POPULAR</p>
+                    </div>
+                    <div>
+                        <span>&#x2039;</span>
+                        <span>&#x203a;</span>
+                    </div>
+                </div>
+                <div id='bottom'>
+                    <div>
+                        <img src='img/product_bottom_2.png' alt=''>
+                        <div class='text_bottom'>
+                            <p>	<span>&#128344;</span> <time> Date: April 05.2017</time></p>
+                            <h3>The best Summer style<br/>from Milan Fashion Week</h3>
+                            <p><span class='icon'>&#9729;</span>05<span class='border'></span><span class='icon'>&#10084;</span>150</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class='right'>
+                            <img src='img/product_bottom_right_1.png' alt=''>
+                            <div class='text_right'>
+                                <p><span>&#128344;</span><time> Date: April 05.2017</time></p>
+                                <p>Fashion Week<br/>London</p>
+                                <p><span class='icon'>&#9729;</span>05<span class='border'></span><span class='icon'>&#10084;</span>150</p>
+                            </div>
+                        </div>
+                        <div class='right'>
+                            <img src='img/product_bottom_right_2.png' alt=''>
+                            <div class='text'>
+                                <p><span>&#128344;</span><time> Date: April 05.2017</time></p>
+                                <p>Fashion Show<br/>2017</p>
+                                <p><span class='icon'>&#9729;</span>05<span class='border'></span><span class='icon'>&#10084;</span>150</p>
+                            </div>
+                        </div>
+                        <div><p>VIEW ALL<span>&rarr;</span></p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="slider_top">
+            <input type='radio' name='slid' id='img_4'checked>
+            <input type='radio' name='slid' id='img_5'>
+            <input type='radio' name='slid' id='img_6'>
+            <input type='radio' name='slid' id='img_7'>
+            <input type='radio' name='slid' id='img_8'>
+            <div id='slid'>
+                <div><label for=img_1><img src='img/barber.png' alt=''></label></div>
+                <div><label for=img_2><img src='img/francois.png' alt=''></label></div>
+                <div><label for=img_3><img src='img/studio.png' alt=''></label></div>
+                <div><label for=img_4><img src='img/vilatex.png' alt=''></label></div>
+                <div><label for=img_5><img src='img/studio.png' alt=''></label></div>
+                <div><label for=img_6><img src='img/vilatex.png' alt=''></label></div>
+                <div><label for=img_7><img src='img/francois.png' alt=''></label></div>
+                <div><label for=img_8><img src='img/barber.png' alt=''></label></div>
+            </div>
+            <div class='prev'>
+                <label for=img_1>&#x2039;</label>
+                <label for=img_2>&#x2039;</label>
+                <label for=img_3>&#x2039;</label>
+                <label for=img_4>&#x2039;</label>
+                <label for=img_5>&#x2039;</label>
+                <label for=img_6>&#x2039;</label>
+                <label for=img_7>&#x2039;</label>
+                <label for=img_8>&#x2039;</label>
+            </div>
+            <div class='next'>
+                <label for=img_1>&#x203a;</label>
+                <label for=img_2>&#x203a;</label>
+                <label for=img_3>&#x203a;</label>
+                <label for=img_4>&#x203a;</label>
+                <label for=img_5>&#x203a;</label>
+                <label for=img_6>&#x203a;</label>
+                <label for=img_7>&#x203a;</label>
+                <label for=img_8>&#x203a;</label>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id='left'>
+            <h3>ModaX</h3>
+            <div id='icon_block'>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-behance" aria-hidden="true"></i>
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id='center'>
+            <div class='footer_nav'>
+                <a href='#'>MAN</a>
+                <a href='#'>WOMAN</a>
+                <a href='#'>LOOKBOOK</a>
+                <a href='#'>SALE</a>
+                <a href='#'>BLOG</a>
+            </div>
+            <form>
+                <p>SUBSCRIBE TO NEWS</p>
+                <input type='email' name='email' class='email' placeholder='Email Adrress'>
+                <input type='submit' name='submit' class='submit' value='Submit'>
+            </form>
+        </div>
+        <div id='right'>
+            <p>CONTACT US</p>
+            <p id='address'>
+                San Francisco, California<br/>
+                400 Castro St, San Francisco CA<br/>
+                (+1)686-868-9999
+            </p>
+            <div id='cart'>
+                <img src='img/visa.png' alt=''>
+                <img src='img/pp.png' alt=''>
+                <img src='img/master.png' alt=''>
+                <img src='img/master_1.png' alt=''>
+                <img src='img/amsk.png' alt=''>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
