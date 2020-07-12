@@ -1,0 +1,50 @@
+#header_center {
+    padding: 0 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #3853d8;
+    color: #fff; 
+}
+
+#center_left, #center_right {
+    align-self: center;
+    cursor: pointer;
+}
+
+#center_left {
+    color: #999999;
+    justify-self: start;
+}
+
+#center_right {
+    justify-self: end;
+}
+
+#center_center {
+    position: relative;
+}
+
+#center_center .header_text {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 15%;
+    
+}
+
+#center_center .header_text h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+#center_center .header_text input{
+    background: #3853d8;
+    font-size: 100%;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}

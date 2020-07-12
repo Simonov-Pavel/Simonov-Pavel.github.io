@@ -1,0 +1,79 @@
+#logo {
+    grid-area: logo;
+}
+
+.top_menu {
+    grid-area: menu;
+}
+
+.singup {
+    grid-area: singup;
+}
+
+.icons {
+    grid-area: icons;
+}
+
+header .top {
+    background: #3853d8;
+    padding: 0 7%;
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+        'logo menu singup icons';
+}
+
+header .top #logo {
+    justify-self: start;
+    align-self: center;
+}
+
+header .top #logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+header .top .singup,
+header .top .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    justify-self: end;
+    align-self: center;
+}
+
+header .top .icons img {
+    width: 60px;
+    cursor: pointer;
+    transition: opacity 1s ease-out;
+}
+
+header .top .icons  img:hover{
+    opacity: 0.5;
+    transition: opacity 1s ease-out;
+}
+
+header .top .icons  img:hover+span{
+    opacity: 0.5;
+}
+
+header .top .icons span {
+    display: inline-block;
+    width: calc(1vw + 10px);
+    height: calc(1vw + 10px);
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    right: -15px;
+    top: 20px;
+    transition: opacity 1s ease-out;
+}
+
+header .icons #card {
+   position: relative;
+}
+

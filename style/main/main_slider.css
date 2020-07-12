@@ -1,0 +1,120 @@
+#main_slide {
+    position: relative;
+}
+
+#main_slide input { display: none; }
+
+#main_slide article{
+    position: relative;
+    color: #fff;
+    padding: 0 10%;
+    
+}
+
+#main_slide article .main_slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+#main_slide article .main_slide img {
+    width: 100%;
+    height: auto;
+    
+}
+
+#main_slide article .text {
+    position: absolute;
+    text-align: center;
+    z-index:1;
+    opacity: 0;
+    top: 11vw;
+    width: 80%;
+    transform: scale(2);
+}
+
+#main_slide article .text p {
+    margin-bottom: 1.5vw;
+}
+
+#main_slide article .text h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 150%;
+}
+
+#main_slide article .nav{
+    position: absolute;
+    z-index:99;
+    top: 13vw;
+    font-size: 5vw;
+    opacity: 0;
+    width: 80%;
+    display: none;
+}
+
+#main_slide article .nav label:hover{
+    color: #999999;
+}
+
+#main_slide input:first-child +  article .nav .prev{
+    color: #999999;
+}
+
+#main_slide input:nth-child(5) +  article .nav .next{
+    color: #999999;
+}
+
+#main_slide article .nav .next {
+    right: 0;
+    position: absolute;
+}
+
+#main_slide input:checked +  article .main_slide{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+
+#main_slide input:checked +  article .text {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 3s ease-in-out;
+}
+
+#main_slide input:checked +  article .nav {
+    opacity: 1;
+    display: block;
+}
+
+.switchs {
+  width: 100%;
+  bottom:-27vw;  
+  height: 1vw;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.switchs .switch {
+  top: -5px;
+  width: 1vw;
+  height: 1vw;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+input#slide_1:checked ~ .switchs label#switch_1,
+input#slide_2:checked ~ .switchs label#switch_2,
+input#slide_3:checked ~ .switchs label#switch_3 {
+  background: rgba(0, 0, 0, 0.8);
+}

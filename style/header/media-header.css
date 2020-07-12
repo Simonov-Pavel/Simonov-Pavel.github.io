@@ -1,0 +1,148 @@
+@media (min-width: 2000px) {
+    header .top_menu #check:checked ~ ul {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1680px){
+    header .top .icons img {
+        width: 40px;
+    }
+    header .top_menu a span.down {
+    margin: 0 0 3px 3px;
+    }
+}
+
+@media (max-width: 1280px) {
+    header .top {
+        grid-template-areas: 
+            'logo logo singup icons'
+            'menu menu menu menu';
+        grid-gap: 10px;
+        
+    }
+    
+    header .top .icons img {
+        width: 32px;
+    }
+    header .top .icons span {
+        right: -10px;
+        top: 15px;
+    }
+    header .top_menu a span {
+        padding: 3px; 
+    }    
+}
+
+@media (max-width: 1024px){
+    header .top {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 640px){
+    header .top {
+        height: 125px;
+    }
+    header .top_menu {
+        position: relative;
+        background: rgba(0,0,0,0.8);
+        top: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        box-shadow: -10px -10px 0px rgba(255, 255, 255, .5);
+        z-index: 5;
+    }
+    header .top_menu ul {
+        display: block;
+        margin-top: 35px;
+    }
+    header .top_menu ul a {
+        border-right: 1px solid #7e93f6;
+        min-width: 240px;
+    }
+
+    header .top_menu #check:checked ~ ul{
+        display: block;
+        position: relative;
+        width: 100%;
+        top: 0px;
+        background: #3853d8;
+    }
+    header .top .menu_btn {
+        position: absolute;
+        right: 90%;
+        top: 80%;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+            z-index:9;
+    }
+
+    header .top .menu_btn>span,
+    header .top .menu_btn>span::before,
+    header .top .menu_btn>span::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    header .top .menu_btn>span::before{
+        content:'';
+        top: -8px;
+    }
+
+    header .top .menu_btn>span::after{
+        content:'';
+        top: 8px;
+    }
+    #check_menu:checked ~ .menu_btn > span {
+        transform: rotate(45deg);
+    }
+    #check_menu:checked ~ .menu_btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #check_menu:checked ~ .menu_btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #check_menu:checked ~ .top_menu {
+        display: block;
+        left: 0;
+    }
+
+    .menu_btn > span,
+    .menu_btn > span::before,
+    .menu_btn > span::after {
+        transition-duration: .25s;
+    }
+    .top_menu {
+        transition-duration: 2s;
+    }
+    .top a {
+        transition-duration: 1s;
+    }
+}
+
+@media (max-width: 480px){
+    header .top {
+        grid-template-areas: 
+            'logo logo . menu'
+            '. singup . icons';
+        grid-gap: 10px;
+    }
+    header .top_menu {
+        position: absolute;
+    }
+    header .top .menu_btn {
+    right: 10%;
+    top: 20%;
+    }
+    #check_menu:checked ~ .top_menu {
+        left: -190px;
+    }
+}

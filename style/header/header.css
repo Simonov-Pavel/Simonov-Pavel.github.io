@@ -1,0 +1,21 @@
+header{
+    background: #3853d8;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header a {
+    color: #fff;
+    transition: all 1s ease;
+}
+
+header a:hover,
+header a:focus{
+    color: #0f0;
+}
+
+header .top input[type='checkbox'] {
+    display: none;
+}
