@@ -52,8 +52,8 @@ article img{ /*размер изображений слайдера*/
     background-size: 4vw;
     background-position-x: right;
 	display: block;
-	height: 150px;
-	width: 150px;
+	height: 2.5vw;
+	width: 5vw;
     position: absolute;
     right: 0;
     margin-right: 7%;
