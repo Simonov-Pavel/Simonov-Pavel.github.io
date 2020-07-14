@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Catalog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style2/style.css">
+</head>
+<body>
+    <header>
+        <div class='top'>
+            <div id='logo'><h1>Be.Pro</h1></div>
+                    <input type='checkbox' id='check_menu'>
+                    <label for='check_menu' class='menu_btn'>
+                        <span></span>
+                    </label>
+                <div class='top_menu'>
+                    <nav>
+                    <ul>
+                        <li>
+                            <input type='checkbox' id='check'>
+                            <label for='check' class='subitem'>
+                                <a>HOME<span class="arrow down"></span></a> 
+                            </label>
+                            <ul>
+                                <li><a href='index.html'>ГЛАВНАЯ</a></li>
+                                <li><a href='catalog.html'>CATALOG</a></li>
+                                <li><a href='product.html'>PRODUCT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>SHOP</a></li>
+                        <li><a href='#'>PORTFOLIO</a></li>
+                        <li><a href='#'>PAGE</a></li>
+                        <li><a href='#'>BLOG</a></li>
+                        <li><a href='#'>ELEMENTS</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class='icons'>
+                    <div id='card'><img src='img/card.png' alt=''><span>3</span></div>
+                    <div><img src='img/search.png' alt=''></div>
+                </div>
+        </div>
+    </header>
+    <main>
+        <section id='main_top'>
+            <h2>MEN&apos;S LIFESTYLE CLOTHING</h2>
+            <div id='crumbs'>
+                <p>Home</p>
+                <div class='crumbs'></div>
+                <p>Catalog</p>
+                <div class='crumbs'></div>
+                <p>Men</p>
+                <div class='crumbs'></div>
+                <p>Clothing</p>
+            </div>
+        </section>
+        <section id='main_banner'>
+            <div id='banner_left'>
+                <div>
+                    <p>LIFESTYLE</p>
+                    <h2>New Now:Striped cotton</h2>
+                    <input type='button' name='button' value='More info'>
+                </div>
+                <div>
+                    <img src='img/banner_catalog_left.png' alt='#'>
+                </div>
+            </div>
+            <div id='banner_right'>
+                <div>
+                    <img src='img/baner_catalog_right.png' alt='#'>
+                </div>
+                <div>
+                    <p>LIFESTYLE</p>
+                    <h2>Fashion Collecttion</h2>
+                    <input type='button' name='button' value='More info'>
+                </div>
+            </div>
+        </section>
+        <section id='main'>
+            <div id='filter'>
+                <div><h3>FILTER</h3></div>
+                <div><img src='img/strelki_catalog.png' class='cursor' alt='#'></div>
+                <div>
+                    <h3>SORT BY:&ensp;Price &#36; - &#36;&#36;</h3>
+                    <span class='down cursor'></span>
+                </div>
+                <div>
+                    <h3>SHOW:&ensp;16</h3>
+                    <span class='down cursor'></span>
+                </div>
+                <div id='icon'>
+                    <i class='cursor fa fa-th-large' aria-hidden='true'></i>
+                    <i class='cursor fa fa-th-list' aria-hidden='true'></i>
+                </div>
+                <div class='cursor'><p>VIEW ALL</p></div>
+            </div>
+            <div id='products'>
+                <div id='category'>
+                    <input type='checkbox' id='open'>
+                    <div class='header'>
+                        <label for='open' class='open'>
+                                <span class='arrow_down'></span>
+                                CATEGORIES
+                        </label>
+                        <label for='open'>
+                            <span class='close'></span>
+                        </label>
+                    </div>
+                    <div id='content'>
+                        <ul>
+                            <li>Lifestyle<span class='count'>01</span></li>
+                            <li>Running<span class='count'>15</span></li>
+                            <li>Training &amp; Gym<span class='count'>20</span></li>
+                            <li>Clothing<span class='count'>25</span></li>
+                            <li>Scarves<span class='count'>30</span></li>
+                            <li>Accessories<span class='count'>35</span></li>
+                            <li>Shoes<span class='count'>45</span></li>
+                            <li>Fragrance<span class='count'>50</span></li>
+                            <li>Footbol<span class='count'>32</span></li>
+                        </ul>
+                    </div>
+                    <input type='checkbox' id='open_range'>
+                    <div class='header'>
+                        <label for='open_range' class='open_range'>
+                                <span class='arrow_down'></span>
+                                PRICE RINGE
+                        </label>
+                        <label for='open_range'>
+                            <span class='close_range'></span>
+                        </label>
+                    </div>
+                    <div id='content_range'>
+                        <div class='left'>&#36;<input id="textbox1" type="text" value='50' disabled></div>
+                        <div class='right'>&#36;<input id="textbox2" type="text" value='950' disabled></div>
+                        <div class='range'>
+                            <input id='example1' type='range' min='0' max='1000' step='10' value='50' class='slider' oninput="textbox1.value = example1.value" onchange='textbox1.value = example1.value'>
+                            <input id='example2' type='range' min='0' max='1000' step='10' value='950' class='slider' oninput="textbox2.value = example2.value" onchange='textbox2.value = example2.value'>
+                        </div>
+                    </div>
+                    <input type='checkbox' id='open_color'>
+                    <div class='header'>
+                        <label for='open_color' class='open_color'>
+                                <span class='arrow_down'></span>
+                                COLOR
+                        </label>
+                        <label for='open_color'>
+                            <span class='close_color'></span>
+                        </label>
+                    </div>
+                    <div id='content_color'>
+                        <div>
+                            <input type='radio' name='color' id='black' checked>
+                            <label for='black' class='color black'></label>
+                            <input type='radio' name='color' id='red'>
+                            <label for='red' class='color red'></label>
+                            <input type='radio' name='color' id='yelow'>
+                            <label for='yelow' class='color yelow'></label>
+                            <input type='radio' name='color' id='green'>
+                            <label for='green' class='color green'></label>
+                            <input type='radio' name='color' id='blue'>
+                            <label for='blue' class='color blue'></label>
+                            <input type='radio' name='color' id='serena'>
+                            <label for='serena' class='color serena'></label>
+                            <input type='radio' name='color' id='light_green'>
+                            <label for='light_green' class='color light_green'></label>
+                            <input type='radio' name='color' id='orange'>
+                            <label for='orange' class='color orange'></label>
+                        </div>
+                    </div>
+                    <input type='checkbox' id='open_size'>
+                    <div class='header'>
+                        <label for='open_size' class='open_size'>
+                                <span class='arrow_down'></span>
+                                SIZE
+                        </label>
+                        <label for='open_size'>
+                            <span class='close_size'></span>
+                        </label>
+                    </div>
+                    <div id='content_size'>
+                        <div>
+                            <div>
+                                <input type='radio' name='size' id='s'>
+                                <label for='s'>S</label>
+                            </div>
+                            <div>
+                                <input type='radio' name='size' id='m'>
+                                <label for='m'>M</label>
+                            </div>
+                            <div>
+                                <input type='radio' name='size' id='l'>
+                                <label for='l'>L</label>
+                            </div>
+                            <div>
+                                <input type='radio' name='size' id='xs'>
+                                <label for='xs'>XS</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='product'>
+                    <div class='product salle_product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'><span class='old_price'>&#36;200.00USD</span>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product salle_product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'><span class='old_price'>&#36;200.00USD</span>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                    <div class='product salle_product'>
+                        <figure>
+                            <img src='img/product_1.png' alt='product'>
+                        <figcaption>
+                            <p class='title'>Essential cotton-blend</p>
+                            <p class='price'><span class='old_price'>&#36;200.00USD</span>&#36;100.00USD</p>
+                            <div class='button'><span></span></div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class='load'><span><img src='img/strelki.png' alt=''>LOAD MORE</span></div>
+            <div id='slider_pagination'>
+                <input type='radio' name='pagination' id='pag1' checked>
+                <input type='radio' name='pagination' id='pag2'>
+                <input type='radio' name='pagination' id='pag3'>
+                <input type='radio' name='pagination' id='pag4'>
+                <input type='radio' name='pagination' id='pag5'>
+                
+                <div class='slide_pagination'>
+                    <label for='pag1'>01</label>
+                    <label for='pag2'>02</label>
+                    <label for='pag3'>03</label>
+                    <label for='pag4'>04</label>
+                    <label for='pag5'>05</label>
+                </div>
+                <div class='preg'>
+                    <label for='pag1'>&#x2039;</label>
+                    <label for='pag2'>&#x2039;</label>
+                    <label for='pag3'>&#x2039;</label>
+                    <label for='pag4'>&#x2039;</label>
+                    <label for='pag5'>&#x2039;</label>
+                </div>
+                <div class='next'>
+                    <label for='pag1'>&#x203a;</label>
+                    <label for='pag2'>&#x203a;</label>
+                    <label for='pag3'>&#x203a;</label>
+                    <label for='pag4'>&#x203a;</label>
+                    <label for='pag5'>&#x203a;</label>
+                </div>
+            </div>
+        </section>
+        <section id='slider_bottom'>
+            <input type='radio' name='slider_bottom' id='slider_bottom_1' checked>
+            <article class='slider_bottom'>
+                <div>
+                    <div class='slider_img'>
+                        <img src='img/banner_bottom.png' alt='slider_1'>
+                    </div>
+                    <div class='slider_text'>
+                        <p>NEW PRODUCT</p>
+                        <h1>The new Collection<br/>of Summer</h1>
+                    </div>
+                </div>
+            </article>
+            <input type='radio' name='slider_bottom' id='slider_bottom_2'>
+            <article class='slider_bottom'>
+                <div>
+                    <div class='slider_img'>
+                        <img src='img/banner_bottom.png' alt='slider_1'>
+                    </div>
+                    <div class='slider_text'>
+                        <p>NEW PRODUCT</p>
+                        <h1>The new Collection<br/>of Summer</h1>
+                    </div>
+                </div>
+            </article>
+            <input type='radio' name='slider_bottom' id='slider_bottom_3'>
+            <article class='slider_bottom'>
+                <div>
+                    <div class='slider_img'>
+                        <img src='img/banner_bottom.png' alt='slider_1'>
+                    </div>
+                    <div class='slider_text'>
+                        <p>NEW PRODUCT</p>
+                        <h1>The new Collection<br/>of Summer</h1>
+                    </div>
+                </div>
+            </article>
+            <div class='switchs'>
+                <label for='slider_bottom_1' class='switch' id='switch_1'></label>
+                <label for='slider_bottom_2' class='switch' id='switch_2'></label>
+                <label for='slider_bottom_3' class='switch' id='switch_3'></label>
+            </div>
+        </section>
+        <section  id="slider_partner">
+            <input type='radio' name='slid' id='img_4'checked>
+            <input type='radio' name='slid' id='img_5'>
+            <input type='radio' name='slid' id='img_6'>
+            <input type='radio' name='slid' id='img_7'>
+            <input type='radio' name='slid' id='img_8'>
+            <div id='slid'>
+                <div><label for=img_1><img src='img/barber.png' alt=''></label></div>
+                <div><label for=img_2><img src='img/francois.png' alt=''></label></div>
+                <div><label for=img_3><img src='img/studio.png' alt=''></label></div>
+                <div><label for=img_4><img src='img/vilatex.png' alt=''></label></div>
+                <div><label for=img_5><img src='img/studio.png' alt=''></label></div>
+                <div><label for=img_6><img src='img/vilatex.png' alt=''></label></div>
+                <div><label for=img_7><img src='img/francois.png' alt=''></label></div>
+                <div><label for=img_8><img src='img/barber.png' alt=''></label></div>
+            </div>
+            <div class='prev'>
+                <label for=img_1>&#x2039;</label>
+                <label for=img_2>&#x2039;</label>
+                <label for=img_3>&#x2039;</label>
+                <label for=img_4>&#x2039;</label>
+                <label for=img_5>&#x2039;</label>
+                <label for=img_6>&#x2039;</label>
+                <label for=img_7>&#x2039;</label>
+                <label for=img_8>&#x2039;</label>
+            </div>
+            <div class='next'>
+                <label for=img_1>&#x203a;</label>
+                <label for=img_2>&#x203a;</label>
+                <label for=img_3>&#x203a;</label>
+                <label for=img_4>&#x203a;</label>
+                <label for=img_5>&#x203a;</label>
+                <label for=img_6>&#x203a;</label>
+                <label for=img_7>&#x203a;</label>
+                <label for=img_8>&#x203a;</label>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id='left'>
+            <h3>ModaX</h3>
+            <div id='icon_block'>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-behance" aria-hidden="true"></i>
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id='center'>
+            <div class='footer_nav'>
+                <a href='#'>MAN</a>
+                <a href='#'>WOMAN</a>
+                <a href='#'>LOOKBOOK</a>
+                <a href='#'>SALE</a>
+                <a href='#'>BLOG</a>
+            </div>
+            <form>
+                <p>SUBSCRIBE TO NEWS</p>
+                <input type='email' name='email' class='email' placeholder='Email Adrress'>
+                <input type='submit' name='submit' class='submit' value='Submit'>
+            </form>
+        </div>
+        <div id='right'>
+            <p>CONTACT US</p>
+            <p id='address'>
+                San Francisco, California<br/>
+                400 Castro St, San Francisco CA<br/>
+                (+1)686-868-9999
+            </p>
+            <div id='cart'>
+                <img src='img/visa.png' alt=''>
+                <img src='img/pp.png' alt=''>
+                <img src='img/master.png' alt=''>
+                <img src='img/master_1.png' alt=''>
+                <img src='img/amsk.png' alt=''>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

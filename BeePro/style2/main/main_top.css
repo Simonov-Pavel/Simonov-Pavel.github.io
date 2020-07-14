@@ -1,0 +1,28 @@
+#main_top {
+    background-color: #0021c4;
+    height: 18vw;
+    color: #fff;
+    text-align: center;
+    
+}
+
+#main_top h2{
+    padding: 3.5vw 0 2vw;
+    font-weight: 700;
+    letter-spacing: 0.25vw;
+}
+
+#main_top #crumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_top .crumbs {
+    width: 0; 
+    height: 0;
+    border-top: 0.4vw solid transparent;
+    border-left: 0.4vw solid #fff;
+    border-bottom: 0.4vw solid transparent;
+    margin: 0 1vw;
+}

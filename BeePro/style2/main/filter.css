@@ -1,0 +1,45 @@
+#filter {
+    display: grid;
+    grid-template-columns: 16vw 6vw 1fr 1fr 11.5vw 11.5vw;
+    border: 1px solid #d5d5d6;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.1vw;
+}
+
+#filter div {
+    padding: 2vw;
+    border-right: 1px solid #d5d5d6;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    align-items: center;
+}
+
+#filter img {
+    width: 1.5vw;
+}
+
+#filter div:last-child {
+    color: #fff;
+    border-right: none;
+    background-color: #3853d8;
+    text-align: center;
+}
+
+#filter .down {
+    width: 0; 
+    height: 0;
+    border-top: 0.6vw solid #000;
+    border-left: 0.6vw solid transparent;
+    border-right: 0.6vw solid transparent;
+}
+
+#filter .cursor {
+    cursor: pointer;
+}
+
+#filter #icon  {
+    color: #3853d8;
+    font-size: 1.3vw;
+}

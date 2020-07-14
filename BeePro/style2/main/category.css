@@ -1,0 +1,93 @@
+#category {
+    border: 1px solid #d5d5d6;
+    border-top: none;
+}
+
+#category .header {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.1vw;
+    position: relative;
+    padding: 2vw;
+}
+
+#category  input[type='checkbox'] {
+    display: none;
+}
+
+#category .header .arrow_down {
+    border: solid;
+    border-width: 0 0.2vw 0.2vw 0;
+    padding: 0.2vw;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin: 0 0 0.3vw 0.3vw; 
+}
+
+#category .header label {
+    cursor: pointer;
+}
+
+#category .header .close,
+#category .header .close_range,
+#category .header .close_color,
+#category .header .close_size {
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+#category .header .close:before, #category .header .close:after,
+#category .header .close_range:before, #category .header .close_range:after,
+#category .header .close_color:before, #category .header .close_color:after,
+#category .header .close_size:before, #category .header .close_size:after {
+    position: absolute;
+    content: ' ';
+    height: 1.5vw;
+    width: 0.2vw;
+    background-color: #999999;
+}
+
+#category .header .close:before,
+#category .header .close_range:before,
+#category .header .close_color:before,
+#category .header .close_size:before {
+transform: rotate(45deg);
+}
+
+#category .header .close:after,
+#category .header .close_range:after,
+#category .header .close_color:after,
+#category .header .close_size:after {
+transform: rotate(-45deg);
+}
+
+#category #open:checked ~ .header .open span.arrow_down,
+#category #open_range:checked ~ .header .open_range span.arrow_down,
+#category #open_color:checked ~ .header .open_color span.arrow_down,
+#category #open_size:checked ~ .header .open_size span.arrow_down {
+    transform: rotate(225deg);
+    margin: 0 0 0 0.3vw;
+}
+
+#category #open:checked ~ .header .close,
+#category #open:checked ~ #content,
+#category #open_range:checked ~ .header .close_range,
+#category #open_range:checked ~ #content_range,
+#category #open_color:checked ~ .header .close_color,
+#category #open_color:checked ~ #content_color,
+#category #open_size:checked ~ .header .close_size,
+#category #open_size:checked ~ #content_size{
+    display: block;
+}
+
+#category #content,
+#category #content_range,
+#category #content_color,
+#category #content_size {
+    padding: 2vw 2.5vw 2vw 3.4vw;
+    display: none;
+    border-bottom: 1px solid #d5d5d6;
+}
+

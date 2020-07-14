@@ -1,0 +1,28 @@
+#content_size>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #d0d0d1;
+    border-right: none;
+    text-align: center;
+    height: 4.5vw;
+}
+
+#content_size>div>div{
+    border-right: 1px solid #d0d0d1;
+    padding: 1.4vw 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#content_size>div>div:hover label{
+    transform: scale(2.5);
+    display: inline-block;
+    transition: all .5s ease-out;
+}
+
+#content_size input:checked ~ label{
+    transform: scale(2.5);
+    display: inline-block;
+    transition: all .5s ease-out;
+}
+

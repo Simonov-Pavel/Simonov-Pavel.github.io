@@ -1,0 +1,75 @@
+#main_banner {
+    margin: -6.5vw 3vw 0;
+    height: 22.6vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#main_banner #banner_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+}
+
+#main_banner p {
+    letter-spacing: 0.15vw;
+}
+
+#main_banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    padding: 1vw 0 4vw;
+}
+
+#main_banner input {
+    width: 11vw;
+    height: 3vw;
+    border-radius: 1vw;
+    color: #cab5a4;
+    outline: none;
+    border: none;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+#banner_left div:nth-child(1) {
+    background-color: #cab5a4;
+    padding: 5vw 0 0 5vw;
+}
+
+#banner_left div:nth-child(2) {
+    background: linear-gradient(115deg, #cab5a4, #d5c0af);
+    position: relative;
+    
+}
+
+#banner_left img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+#main_banner #banner_right {
+    display: grid;
+    grid-template-columns: 1fr 1.55fr;
+    background: linear-gradient(115deg, #b49d8d, #d3bcac);
+    color: #fff;
+}
+
+#banner_right img {
+    box-shadow: 5vw 0 1vw rgba(198,175,159,0.4); 
+    width: 100%;
+}
+
+#banner_right div:nth-child(2) {
+    padding: 4vw 0 0 2.5vw; 
+}
+
+
+

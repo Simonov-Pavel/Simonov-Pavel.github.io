@@ -1,0 +1,72 @@
+#content_color>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2.2vw;
+}
+
+.color{
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.black{
+    background: #000;
+}
+
+.red{
+    background: #f44336;
+}
+
+.yelow{
+    background: #ffeb3b;
+}
+
+.green{
+    background: #4caf50;
+}
+
+.blue{
+    background: #2196f3;
+}
+
+.serena{
+    background: #9c27b0;
+}
+
+.light_green{
+    background: #8bc34a;
+}
+
+.orange{
+    background: #ff9800;
+}
+
+#content_color label::after {
+    content:"";
+    display: inline-block;
+    height: 1vw;
+    width: .5vw;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: .7vw;
+    top: .2vw;
+}
+
+#content_color input:checked + label {
+    background: #fff;
+    transition: all 2s ease-out;
+}
+
+#content_color input + label::after {
+    content: none;
+    position: relative;
+}
+
+#content_color input:checked + label::after {
+    content: "";
+}

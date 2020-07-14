@@ -1,0 +1,70 @@
+#slider_pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 5.7vw;
+    margin: 3vw 0;
+    border: 1px solid #d5d5d6;
+    font-size: 1.5vw;
+    align-items: center;
+    position: relative;
+}
+
+#slider_pagination .slide_pagination {
+    width: 28.5vw;
+    grid-column: 2/4
+}
+
+#slider_pagination .slide_pagination label {
+    display: inline-block;
+    width: 5.7vw;
+    height: 5.7vw;
+    margin: 0 -.25vw;
+    padding: 1.5vw;
+    cursor: pointer;
+    color: #232323;
+}
+
+#slider_pagination .preg label,
+#slider_pagination .next label {
+    position: absolute;
+    top: -1vw;
+    font-size: 5vw;
+    cursor: pointer;
+    color: #232323;
+    display: none;
+}
+
+#slider_pagination .preg label{
+    left: 4vw;
+}
+
+#slider_pagination .next label {
+    right: 4vw;
+}
+
+#slider_pagination .preg label:hover,
+#slider_pagination .next label:hover {
+    color: #3853d8;
+}
+
+ #slider_pagination #pag1:checked ~ .preg label:nth-child(5),
+ #slider_pagination #pag2:checked ~ .preg label:nth-child(1),
+ #slider_pagination #pag3:checked ~ .preg label:nth-child(2),
+ #slider_pagination #pag4:checked ~ .preg label:nth-child(3),
+ #slider_pagination #pag5:checked ~ .preg label:nth-child(4),
+ #slider_pagination #pag1:checked ~ .next label:nth-child(2),
+ #slider_pagination #pag2:checked ~ .next label:nth-child(3),
+ #slider_pagination #pag3:checked ~ .next label:nth-child(4),
+ #slider_pagination #pag4:checked ~ .next label:nth-child(5),
+ #slider_pagination #pag5:checked ~ .next label:nth-child(1){
+    display: block;
+}
+
+#slider_pagination #pag1:checked ~ .slide_pagination label:nth-child(1),
+#slider_pagination #pag2:checked ~ .slide_pagination label:nth-child(2),
+#slider_pagination #pag3:checked ~ .slide_pagination label:nth-child(3),
+#slider_pagination #pag4:checked ~ .slide_pagination label:nth-child(4),
+#slider_pagination #pag5:checked ~ .slide_pagination label:nth-child(5){
+    background: #3853d8;
+    color: #fff;
+}

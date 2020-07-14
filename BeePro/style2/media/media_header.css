@@ -1,0 +1,85 @@
+@media (max-width: 640px){  
+    header .top {
+        grid-template-areas: 
+            'logo icons menu';
+    }
+    
+    header .top .top_menu {
+        display: none;
+    }
+    
+    header .top .menu_btn {
+        position: absolute;
+        right: 7%;
+        top: 50%;
+        width: 4vw;
+        height: 4vw;
+        cursor: pointer;
+        z-index:9;
+    }
+    header .top .menu_btn>span,
+    header .top .menu_btn>span::before,
+    header .top .menu_btn>span::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition-duration: .25s;
+    }
+
+    header .top .menu_btn>span::before{
+        content:'';
+        top: -1vw;
+    }
+
+    header .top .menu_btn>span::after{
+        content:'';
+        top: 1vw;
+    }
+    #check_menu:checked ~ .menu_btn > span {
+        transform: rotate(45deg);
+    }
+    #check_menu:checked ~ .menu_btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #check_menu:checked ~ .menu_btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #check_menu:checked ~ .top_menu {
+        display: block;
+        position: absolute;
+        background: rgba(0,0,0,0.8);
+        top: 0;
+        left: 7%;
+        right: 7%;
+        box-shadow: -10px -10px 0px rgba(255, 255, 255, .5);
+        z-index: 5;
+    }
+    header .top_menu ul {
+        display: block;
+        margin-top: 35px;
+        width: 100%;
+    }
+    header .top_menu ul li ul {
+        margin-top: 0px;
+    }
+    header .top_menu ul li a{
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    header .top_menu #check:checked ~ ul{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .top_menu .arrow {
+        border-width: 0 0.5vw 0.5vw 0;
+        padding: 0.5vw;
+        margin: 0 0 0.5vw 0.5vw;
+    }
+}

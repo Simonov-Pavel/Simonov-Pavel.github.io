@@ -1,0 +1,12 @@
+#category #content li {
+    margin-bottom: 1.5vw;
+    color: #000;
+}
+
+#category #content li:hover {
+    color: #3853d8;
+}
+
+#category #content span {
+    float: right;
+}

@@ -1,0 +1,73 @@
+#product {
+    padding: 2vw 0 2vw 2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    
+}
+
+.product{
+    padding: 2vw;
+    position: relative;
+}
+
+.product:hover {
+    transform: scale(1.2);
+    cursor: pointer; 
+    transition: all 1s ease-out;
+}
+
+.product figure img {
+    width: 11vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.product p.title {
+    display: inline-block;
+    margin: 2vw 0 1.5vw;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.product .price {
+    color: #3853d8;
+}
+
+.product .old_price {
+    display: inline-block;
+    margin-right: 2vw;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.salle_product .button span:before {
+    content: 'sale';
+    font-weight: 700;
+}
+
+.salle_product .button {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #fff;
+    background: #3853d8;
+    padding: .3vw .9vw;
+    border-radius: .5vw;
+}
+
+div.load {
+    text-align: center;
+    font-weight: 700; 
+}
+
+.load span {
+    cursor: pointer;
+}
+
+.load img {
+    width: 2vw;
+    position: relative;
+    right: .5vw;
+    bottom: -.5vw;
+}
