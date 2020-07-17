@@ -1,0 +1,11 @@
+@media (max-width: 540px) {
+    footer {
+        grid-template-columns:  1fr ;
+        grid-template-areas:
+        'left'
+        'center'
+        'right';
+        grid-row-gap: 5vw;
+        text-align: center;
+    }
+}

@@ -1,0 +1,14 @@
+@media(max-width: 640px){
+    #product {
+        grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    }
+    .load img {
+        bottom: 0;
+    }
+}
+
+@media(max-width: 400px){
+    #product {
+        text-align: center;
+    }
+}

@@ -1,0 +1,28 @@
+@media (max-width: 900px){
+    body{
+        font-size: 1.5vw;
+    }
+    body h3{
+        font-size: 1.4vw;
+    }
+    header .top .icons img {
+        width: 3vw;
+    }
+    header .top .icons span {
+        width: 2vw;
+        height: 2vw;
+        top: 1.5vw;
+    }
+}
+
+@media (max-width: 640px){
+    body{
+        font-size: 2vw;
+    }
+    body h3{
+        font-size: 1.4vw;
+    }
+    #products{
+        grid-template-columns: 30vw 1fr;
+    }
+}
