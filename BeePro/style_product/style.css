@@ -3,3 +3,7 @@
 @import 'header/top.css';
 @import 'header/top_menu.css';
 @import 'main/main_top.css';
+@import 'media/media_body.css';
+@import 'media/media_header.css';
+@import 'media/media_product.css';
+@import 'media/media_footer.css';
