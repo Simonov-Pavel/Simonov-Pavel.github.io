@@ -1,0 +1,54 @@
+header .top_menu{
+    align-self: center;
+    position: relative;
+}
+
+header .top_menu ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header .top_menu ul li a{
+    display: inline-block;
+    padding: 1vw;
+    width: 100%;
+}
+
+header .top_menu ul li ul li{
+    border-bottom: 1px solid #fff;
+}
+
+header .top_menu ul a:hover,
+header .top_menu ul a:focus{
+    background: #4661e6;
+}
+
+header .top_menu ul li ul {
+    display: none;
+    background: #7e93f6;
+}
+
+header .top_menu #check:checked ~ ul{
+    display: block;
+    position: absolute;
+    width: 17%;
+    top: 100%;
+    background: #3853d8;
+}
+
+header .top_menu #check:checked ~ .subitem span.down{
+    transform: rotate(225deg);
+    margin: 0.3vw 0.3vw 0;
+}
+
+ .top_menu .arrow {
+    border: solid;
+    border-width: 0 0.2vw 0.2vw 0;
+    padding: 0.2vw;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin: 0 0 0.3vw 0.3vw;
+}
+
+
