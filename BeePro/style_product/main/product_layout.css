@@ -20,6 +20,10 @@
     font-family: 'Playfair Display', serif;
 }
 
+#product_layout .stars {
+    margin: 2.5vw 0;
+}
+
 #product_layout .fa-star{
     color: #f2b309;
     font-size: 1.4vw;
@@ -38,4 +42,9 @@
 #product_layout .border{
     border-right: 1px solid #999999;
     margin: 0 .6vw;
+}
+
+#product_layout .color_size p {
+    color: #000;
+    font-weight: 700;
 }
