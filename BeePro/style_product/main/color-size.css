@@ -1,0 +1,61 @@
+.color_size {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.color_size .color_radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 5vw;
+}
+
+.color{
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.black{
+    background: #000;
+}
+
+.red{
+    background: #f44336;
+}
+
+.yelow{
+    background: #ffeb3b;
+}
+
+.green{
+    background: #4caf50;
+}
+
+.color_size label::after {
+    content:"";
+    display: inline-block;
+    height: 1vw;
+    width: .5vw;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: .7vw;
+    top: .2vw;
+}
+
+.color_size input:checked + label {
+    background: #fff;
+    transition: all 2s ease-out;
+}
+
+.color_size input + label::after {
+    content: none;
+    position: relative;
+}
+
+.color_size input:checked + label::after {
+    content: "";
+}
