@@ -1,0 +1,41 @@
+#product_layout {
+    background: #fff;
+    margin: -6vw 3vw 0;
+    border: 1px solid #d3d3d3;
+    padding: 10vw 6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#product_layout p {
+    color: #3853d8;
+    letter-spacing: 0.25vw;
+    margin-bottom: 1vw;
+}
+
+#product_layout h1 {
+    color: #232323;
+    font-size: 2.4vw;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+#product_layout .fa-star{
+    color: #f2b309;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+
+#product_layout .nogold{
+    color: #cccccc;
+}
+
+#product_layout .review{
+    margin-left: 1vw;
+    color: #999999;
+}
+
+#product_layout .border{
+    border-right: 1px solid #999999;
+    margin: 0 .6vw;
+}
