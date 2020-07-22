@@ -19,7 +19,6 @@ footer {
     padding: 3vw 7vw;
     color: #fff;
     font-size: calc(1vw + 2px);
-    margin-top: 21vw;
 }
 
 footer #left {
@@ -68,8 +67,9 @@ footer #center p{
 
 footer #center input{
     padding: 0 2.5vw;
+    height:3vw;
     font-size: calc(1vw + 4px);
-    outline: none;
+    
 }
 
 footer #center input.email{
@@ -85,6 +85,18 @@ footer #right img {
     width: 2.8vw;
     margin-right: 1vw;
     cursor: pointer;
+}
+
+@media (max-width: 540px) {
+    footer {
+        grid-template-columns:  1fr ;
+        grid-template-areas:
+        'left'
+        'center'
+        'right';
+        grid-row-gap: 5vw;
+        text-align: center;
+    }
 }
 
 
