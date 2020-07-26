@@ -1,0 +1,15 @@
+#product_slider {
+    position: relative;
+}
+
+.product_slid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5.5vw;
+    border: 1px solid #000;
+}
+
+.product_slid picture{
+    width: 100%;
+}
