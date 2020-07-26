@@ -10,7 +10,6 @@
 #product_layout p {
     color: #3853d8;
     letter-spacing: 0.25vw;
-    margin-bottom: 1vw;
 }
 
 #product_layout h1 {
@@ -44,8 +43,5 @@
     margin: 0 .6vw;
 }
 
-#product_layout .color_size p {
-    color: #000;
-    font-weight: 700;
-}
+
 
