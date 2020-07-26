@@ -59,3 +59,9 @@
 .color_size input:checked + label::after {
     content: "";
 }
+
+.color_size p.price {
+    font-size: 1vw;
+    color: #cc3333;
+}
+
