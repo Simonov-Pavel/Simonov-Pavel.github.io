@@ -12,12 +12,11 @@
     letter-spacing: 0.25vw;
 }
 
-#product_layout h1 {
+#product_layout h2 {
     color: #232323;
     font-size: 2.4vw;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
-    font-display: swap;
 }
 
 #product_layout .stars {
@@ -45,5 +44,12 @@
     margin: 0 .6vw;
 }
 
+#product_layout .bottom {
+    color: #cccccc;
+    margin-top: 5vw; 
+}
 
+#product_layout .bottom i{
+    margin-right: 1vw;
+}
 

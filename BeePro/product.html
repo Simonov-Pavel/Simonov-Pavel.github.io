@@ -16,8 +16,7 @@
                     <label for='check_menu' class='menu_btn'>
                         <span></span>
                     </label>
-                <div class='top_menu'>
-                    <nav>
+                <nav class='top_menu'>
                     <ul>
                         <li>
                             <input type='checkbox' id='check'>
@@ -36,8 +35,7 @@
                         <li><a href='#'>BLOG</a></li>
                         <li><a href='#'>ELEMENTS</a></li>
                     </ul>
-                    </nav>
-                </div>
+                </nav>
                 <div class='icons'>
                     <div id='card'><img src='img/card.png' alt=''><span>3</span></div>
                     <div><img src='img/search.png' alt=''></div>
@@ -60,7 +58,7 @@
         <section id='product_layout'>
             <div>
                 <p>LIFESTYLE</p>
-                <h1>Double-faced Wool Cape Jacked</h1>
+                <h2>Double-faced Wool Cape Jacked</h2>
                 <div class='stars'>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -149,7 +147,7 @@
                                 <img src="img/product_6.png" alt='slider'>
                             </picture>
                         </label>
-                        <label for='product_slid_4' class='switch' id='product_switch_3'>
+                        <label for='product_slid_4' class='switch' id='product_switch_4'>
                             <picture>
                                 <source srcset='img/product_9.webp'>
                                 <img src="img/product_6.png" alt='slider'>
@@ -158,16 +156,33 @@
                     </div>
                 </div>
             </div>
+            <p class='bottom'><i class="fa fa-heart-o" aria-hidden="true"></i>Add to Wish List</p>
         </section>
-        <section  id="slider_partner">
-            <input type='radio' name='slid' id='img_4'checked>
+        <section id='review'>
+            <div class='review_nav'>
+                <input type='radio' name='review' id='reviews' checked>
+                <label for='reviews'>REVIEW</label>
+                <input type='radio' name='review' id='specification'>
+                <label for='specification'>SPECIFICATION</label>
+                <input type='radio' name='review' id='description'>
+                <label for='description'>DESCRIPTION</label>
+            </div>
+            <div class='review'>
+                <h2>All Reviews<span>(03)</span></h2>
+            </div>
+        </section>
+        <div  id="slider_partner">
+            <input type='radio' name='slid' id='img_1'>
+            <input type='radio' name='slid' id='img_2'>
+            <input type='radio' name='slid' id='img_3'>
+            <input type='radio' name='slid' id='img_4' checked>
             <input type='radio' name='slid' id='img_5'>
             <input type='radio' name='slid' id='img_6'>
             <input type='radio' name='slid' id='img_7'>
             <input type='radio' name='slid' id='img_8'>
             <div id='slid'>
                 <div>
-                    <label for=img_1>
+                    <label for=img_1 id='img1'>
                         <picture>
                             <source srcset='img/barber.webp'>
                             <img src="img/barber.png" alt='slider'>
@@ -175,7 +190,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_2>
+                    <label for=img_2 id='img2'>
                         <picture>
                             <source srcset='img/francois.webp'>
                             <img src="img/francois.png" alt='slider'>
@@ -183,7 +198,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_3>
+                    <label for=img_3 id='img3'>
                         <picture>
                             <source srcset='img/studio.webp'>
                             <img src="img/studio.png" alt='slider'>
@@ -191,7 +206,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_4>
+                    <label for=img_4 id='img4'>
                         <picture>
                             <source srcset='img/vilatex.webp'>
                             <img src="img/vilatex.png" alt='slider'>
@@ -199,7 +214,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_5>
+                    <label for=img_5 id='img5'>
                         <picture>
                             <source srcset='img/barber.webp'>
                             <img src="img/barber.png" alt='slider'>
@@ -207,7 +222,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_6>
+                    <label for=img_6 id='img6'>
                         <picture>
                             <source srcset='img/studio.webp'>
                             <img src="img/studio.png" alt='slider'>
@@ -215,7 +230,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_7>
+                    <label for=img_7 id='img7'>
                         <picture>
                             <source srcset='img/studio.webp'>
                             <img src="img/studio.png" alt='slider'>
@@ -223,7 +238,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for=img_8>
+                    <label for=img_8 id='img8'>
                         <picture>
                             <source srcset='img/vilatex.webp'>
                             <img src="img/vilatex.png" alt='slider'>
@@ -251,7 +266,7 @@
                 <label for=img_7>&#x203a;</label>
                 <label for=img_8>&#x203a;</label>
             </div>
-        </section>
+        </div>
         
     </main>
     <footer>

@@ -1,0 +1,45 @@
+#review {
+    margin: 0 3vw 0;
+    border: 1px solid #d3d3d3;
+    border-top: none;
+}
+
+#review .review_nav {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0 6vw;
+}
+
+#review .review_nav label{
+    display: inline-block;
+    padding: 2vw 0;
+    margin-right: 5vw;
+    font-weight: 700;
+}
+
+#review .review_nav label:hover{
+    color: #3853d8;
+    border-bottom: 1px solid #3853d8;
+}
+
+#review input:checked + label {
+    color: #3853d8;
+    border-bottom: 1px solid #3853d8;
+}
+
+#review .review {
+    padding: 3vw 11vw;
+}
+
+#review .review h2 {
+    color: #232323;
+    font-size: 1.7vw;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+#review .review h2 span {
+    color: #3853d8;
+    margin-left: .5vw;
+}
+
+
