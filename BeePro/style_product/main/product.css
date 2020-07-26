@@ -1,0 +1,156 @@
+#cart_1 {
+    grid-area: cart_1;
+}
+
+#cart_2 {
+    grid-area: cart_2;
+}
+
+#cart_3 {
+    grid-area: cart_3;
+}
+
+#cart_4 {
+    grid-area: cart_4;
+}
+
+
+#product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px,auto));
+    grid-template-areas:
+        'cart_1 cart_2 cart_3 cart_4';
+    grid-gap: 3%;
+    margin: 3vw;
+}
+
+.product_popular{
+    padding: 10%;
+    background: #000;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.product_popular h3{
+    padding: 20px 0 30px;
+}
+
+.product_popular img{
+    justify-self: center;
+}
+
+.product {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #b8b4b4;
+    padding: 10%;
+    cursor: pointer;
+}
+
+.product img{
+    justify-self: center;
+    width: 50%;
+}
+
+.product .product_text{
+    color: #232323;
+    font-weight: bold;
+    align-self: end;
+    line-height: 2em;
+}
+
+.product .old_price {
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.product .price {
+    color: #3853d8;
+    
+}
+
+.product_new{
+    position: relative;
+}
+
+.product_new div{
+    position: absolute;
+}
+
+.product_new img {
+    width: 100%;
+}
+
+.product_new .new_text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #fff;
+}
+
+.product_new .new_text h2{
+    padding: 5% 0 10% 0;
+}
+
+.product_new .button_price p {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #3853d8;
+    background: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product_new .button_price p span {
+    display: inline-block;
+    width:1px;
+    height: 0.7em;
+    background: #3853d8;
+    margin: 0 10px;
+}
+
+.sale .button span:before {
+    content: 'sale';
+    font-weight: 700;
+}
+
+.new .button span:before {
+    content: 'new';
+    font-weight: 700;
+}
+
+.new .button {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 3px 10px;
+    color: #3853d8;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+.sale .button{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 3px 10px;
+    color: #fff;
+    background: #3853d8;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+@media (max-width: 640px){
+    #product {
+        grid-template-areas:
+            'cart_1 cart_2 '
+            'cart_3 cart_4';
+           
+    }
+}
