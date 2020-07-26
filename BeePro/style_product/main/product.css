@@ -51,6 +51,10 @@
     cursor: pointer;
 }
 
+.product picture{
+    justify-self: center;
+}
+
 .product img{
     justify-self: center;
     width: 50%;
