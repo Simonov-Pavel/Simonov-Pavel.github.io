@@ -60,8 +60,13 @@
     content: "";
 }
 
-.color_size p.price {
-    font-size: 1vw;
+.color_size .price {
     color: #cc3333;
+    font-size: 1.6vw;
+}
+
+.color_size .old_price {
+    color: #999999;
+    font-size: 1vw;
 }
 
