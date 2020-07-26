@@ -9,14 +9,14 @@
     padding: 0 6vw;
 }
 
-#review .review_nav label{
+#review label{
     display: inline-block;
     padding: 2vw 0;
     margin-right: 5vw;
     font-weight: 700;
 }
 
-#review .review_nav label:hover{
+#review  label:hover{
     color: #3853d8;
     border-bottom: 1px solid #3853d8;
 }
@@ -31,7 +31,16 @@
     display: none;
 }
 
-#review #reviews:checked ~ .reviews,
+#review .review picture {
+    width: 5.4vw;
+    height: 5.4vw;
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+
+#review #reviews:checked ~ .reviewses,
 #review #specification:checked ~ .specification,
 #review #description:checked ~ .description {
     display: block;
@@ -42,11 +51,60 @@
     font-size: 1.7vw;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
+    margin-bottom:  2.2vw;
 }
 
 #review .review h2 span {
     color: #3853d8;
     margin-left: .5vw;
+}
+
+.reviews {
+    padding: 2.2vw 0;
+    border-bottom: 1px solid #d3d3d3;
+    display: grid;
+    grid-template-columns: 5.4vw 1fr;
+}
+
+.reviews .reviev {
+    padding: .7vw 0 0 2vw;
+    color: #999999;
+}
+
+.reviews .name {
+    color: #000;
+    font-size: 1.4vw;
+    margin-right: 3.5vw;
+}
+
+.time {
+    float: right;
+    
+}
+
+.reviews .reviev p{
+    margin: 1.5vw 0;
+}
+
+.reviews .reviev .fa_thumbs i{
+    margin-right: .5vw;
+}
+
+.load {
+    text-align: center;
+    margin-bottom: 3vw;
+    font-family: 'Montserrat','Arial', sans-serif;
+    font-weight: 700;
+    color: 232323;
+}
+
+.load img{
+    margin-right: 1vw;
+    width: 1.5vw;
+}
+
+.load span{
+    cursor: pointer;
 }
 
 

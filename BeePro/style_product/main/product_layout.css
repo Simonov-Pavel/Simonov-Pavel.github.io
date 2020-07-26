@@ -19,27 +19,28 @@
     font-family: 'Playfair Display', serif;
 }
 
-#product_layout .stars {
+.stars {
     margin: 2.5vw 0;
 }
 
-#product_layout .fa-star{
+.fa-star{
     color: #f2b309;
     font-size: 1.4vw;
     cursor: pointer;
     font-display: swap;
 }
 
-#product_layout .nogold{
+.nogold{
     color: #cccccc;
 }
 
-#product_layout .review{
+.rev{
     margin-left: 1vw;
     color: #999999;
+    cursor: pointer;
 }
 
-#product_layout .border{
+.border{
     border-right: 1px solid #999999;
     margin: 0 .6vw;
 }
