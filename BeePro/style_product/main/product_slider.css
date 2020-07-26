@@ -7,9 +7,47 @@
     top: 0;
     left: 0;
     right: 5.5vw;
-    border: 1px solid #000;
+    padding-top: 4vw;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+    height: auto;
 }
 
-.product_slid picture{
-    width: 100%;
+.product_slid img{
+    width: 23vw;
+    height: auto;
+}
+
+#product_slider input:checked + .product_slid {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+#switch {
+    width: 5.5vw;
+    right: 0;
+    display: block;
+    position: absolute;
+    
+}
+
+#switch .switch {
+    top: 0;
+    width: 5.5vw;
+    height: 5.5vw;
+    position: relative;
+    border: 1px solid #d5d5d6;
+    display: block;
+    margin: auto;
+}
+
+#switch .switch img{
+    width: 3.5vw;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
