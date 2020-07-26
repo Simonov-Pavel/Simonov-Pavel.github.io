@@ -11,6 +11,8 @@
     margin: 1vw 0 5vw;
 }
 
+
+
 .color{
     display: block;
     width: 2vw;
@@ -86,9 +88,17 @@
     background: #3853d8;
     border-radius: 1vw;
     border: none;
-    width: 8vw;
+    width: 9vw;
     height: 2.5vw;
     font-size: 1vw;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+#color_size input[type='submit']:hover {
+    transition: all 0.5s ease;
+    font-size: 1.1vw;
+    opacity: 0.8;
 }
 
 #color_size .size_radio label {
