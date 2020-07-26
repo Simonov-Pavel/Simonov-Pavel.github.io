@@ -93,6 +93,7 @@
     font-size: 1vw;
     transition: all 0.5s ease;
     outline: none;
+    cursor: pointer;
 }
 
 #color_size input[type='submit']:hover {
@@ -103,6 +104,7 @@
 
 #color_size .size_radio label {
     font-weight: 700;
+    cursor: pointer;
 }
 
 #color_size .size_radio input:checked + label,
