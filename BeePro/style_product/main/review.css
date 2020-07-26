@@ -28,6 +28,13 @@
 
 #review .review {
     padding: 3vw 11vw;
+    display: none;
+}
+
+#review #reviews:checked ~ .reviews,
+#review #specification:checked ~ .specification,
+#review #description:checked ~ .description {
+    display: block;
 }
 
 #review .review h2 {
