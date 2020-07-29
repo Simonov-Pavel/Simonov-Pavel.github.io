@@ -1,4 +1,5 @@
 header{
-   background: url(../../images/header.jpg);
+   background: url(../../images/header.jpg) no-repeat;
    height: 148px;
+
 }
