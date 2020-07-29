@@ -1,0 +1,12 @@
+@media (max-width: 1000px){
+    header{
+        background: url(../../images/header600.jpg);
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        background: url(../../images/header320.jpg);
+    }
+}
+
