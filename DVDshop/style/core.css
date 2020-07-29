@@ -6,10 +6,9 @@
 }
 
 body{
-   background: url(../images/bg.png);
+   background: url(../images/bg.webp);
+   
    font-family: Verdana, Arial, Tahoma;
-   margin: 0;
-   padding: 0;
 }
 
 .clear{
