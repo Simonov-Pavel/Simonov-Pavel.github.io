@@ -29,3 +29,8 @@ ul{
  input[type='radio'] {
     display: none
 }
+
+#conteiner{
+   margin: 0 auto;
+   width: 1000px;
+}
