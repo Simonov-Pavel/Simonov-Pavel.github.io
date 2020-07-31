@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+   background: url(../images/bg.webp);
+   
+   font-family: Verdana, Arial, Tahoma;
+}
+
+.clear{
+   clear: both;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+ input[type='checkbox'],
+ input[type='radio'] {
+    display: none
+}
+
+#conteiner{
+   margin: 0 auto;
+   width: 1000px;
+}

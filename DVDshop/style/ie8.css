@@ -1,0 +1,9 @@
+#cart table input[type="text"] {
+	height: 20px;
+	padding-top: 3px;
+}
+
+#cart #discount table input[type="text"] {
+	height: 21px;
+	padding-top: 6px;
+}
