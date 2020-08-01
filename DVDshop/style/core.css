@@ -7,7 +7,8 @@
 
 body{
    background: url(../images/bg.webp);
-   
+   margin: 0 auto;
+   width: 1000px;
    font-family: Verdana, Arial, Tahoma;
 }
 
@@ -27,9 +28,4 @@ ul{
  input[type='checkbox'],
  input[type='radio'] {
     display: none
-}
-
-#conteiner{
-   margin: 0 auto;
-   width: 1000px;
 }
