@@ -41,3 +41,12 @@ main .intro_product figcaption .card{
 main .intro_product figcaption .card:hover {
    background: url(../../images/cart_active.jpg) no-repeat;
 }
+
+@media(max-width: 640px){
+    main #main_content .product {
+        grid-template-columns: 1fr 1fr;
+    }
+    main .intro_product figcaption p a{
+        font-size: 65%;
+    }
+}
