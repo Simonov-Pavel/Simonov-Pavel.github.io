@@ -1,0 +1,23 @@
+main .content header {
+    display: flex;
+    border-top: 15px solid #51bdf0;
+}
+
+.content header .section {
+    margin-top: -15px;
+}
+
+.content header .sort {
+    display: flex;
+    margin: 10px 0 0 10px;
+    font-size: 90%;
+}
+
+.content header .sort p {
+    margin: 0 10px;
+}
+
+.content header .sort p span{
+    cursor: pointer;
+}
+

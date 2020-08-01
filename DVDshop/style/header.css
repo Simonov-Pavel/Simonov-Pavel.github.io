@@ -3,7 +3,8 @@ header{
    height: 148px;
 }
 
-header div{
+header .contact,
+header .card{
    font-size: 84%;
    padding-top: 70px;
    text-align: center;

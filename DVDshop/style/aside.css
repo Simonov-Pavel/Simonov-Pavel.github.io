@@ -2,9 +2,14 @@ aside {
    background-color: #f1fae9;
    border: 1px solid #51bdf0;
    border-radius:0 8px 8px 0;
-   float: left;
+   /*float: left;*/
    margin-bottom: 50px;
-   width:240px;
+   /*width:240px;*/
+}
+
+main header {
+    background: none;
+    height: auto;
 }
 
 .section{
@@ -13,7 +18,8 @@ aside {
    color: #fff;
    padding: 10px;
    text-align: center;
-   height: auto;
+   width: 200px;
+   
 }
 
 .section h3{

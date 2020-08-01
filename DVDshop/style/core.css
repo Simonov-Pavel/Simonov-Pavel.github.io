@@ -15,6 +15,10 @@ body{
 main {
    background-color: #f2f5fa;
    padding-top: 15px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 200px 1fr;
+   grid-gap: 15px;
 }
 
 .clear{
