@@ -44,10 +44,13 @@ main .intro_product figcaption .card:hover {
 
 @media(max-width: 640px){
     main #main_content .product {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    main .intro_product figcaption .price{
-    color: #000;
+    main .intro_product picture {
+        margin: 0 auto;
+        display: block;
+    }
+    main .intro_product figcaption p a{
+        font-size: 90%;
     }
 }
-

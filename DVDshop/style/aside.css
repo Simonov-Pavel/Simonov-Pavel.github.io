@@ -50,4 +50,10 @@ aside nav p a {
 
 aside nav p a:hover{
    color: #05aefe;
-}  
+} 
+
+@media(max-width: 640px){
+    aside nav p a {
+   font-size: 110%;
+}
+}    
