@@ -1,7 +1,7 @@
 main #main_content .product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     margin: 15px 0;
 }
 
@@ -44,9 +44,10 @@ main .intro_product figcaption .card:hover {
 
 @media(max-width: 640px){
     main #main_content .product {
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     }
-    main .intro_product figcaption p a{
-        font-size: 65%;
+    main .intro_product figcaption .price{
+    color: #000;
     }
 }
+
