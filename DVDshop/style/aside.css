@@ -1,0 +1,45 @@
+aside {
+   background-color: #f1fae9;
+   border: 1px solid #51bdf0;
+   border-radius:0 8px 8px 0;
+   float: left;
+   margin-bottom: 50px;
+   width:208px;
+}
+
+.section{
+   background: #51bdf0;
+   border-radius: 0 8px 8px 0;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+   height: auto;
+}
+
+.section h3{
+   font-style: italic;
+}
+
+aside nav {
+    padding: 5px 8px 5px 5px;
+}
+
+aside nav p {
+    border-bottom: 1px dashed #51bdf0;
+}
+
+aside nav p:last-child {
+    border-bottom: none;
+}
+
+aside nav p a {
+    color: #161514;
+   display: inline-block;
+   font-size: 75%;
+   font-weight: bold;
+   margin: 0 0 5px 5px;
+}
+
+aside nav p a:hover{
+   color: #05aefe;
+}  

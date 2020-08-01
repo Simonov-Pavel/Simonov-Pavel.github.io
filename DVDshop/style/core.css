@@ -6,10 +6,15 @@
 }
 
 body{
-   background: url(../images/bg.webp);
+   background-image: url(../images/bg.webp);
    margin: 0 auto;
    width: 1000px;
    font-family: Verdana, Arial, Tahoma;
+}
+
+main {
+   background-color: #f2f5fa;
+   padding-top: 15px;
 }
 
 .clear{

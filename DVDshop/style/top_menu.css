@@ -11,8 +11,12 @@
 }
 
 #topmenu ul li{
-    float: left;
+   float: left;
    border-right: 2px solid  #4d9f49;
+}
+
+#topmenu ul li:last-child{
+   border-right: none;
 }
 
 #topmenu a{
