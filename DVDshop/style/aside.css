@@ -4,7 +4,7 @@ aside {
    border-radius:0 8px 8px 0;
    float: left;
    margin-bottom: 50px;
-   width:208px;
+   width:240px;
 }
 
 .section{
@@ -33,9 +33,9 @@ aside nav p:last-child {
 }
 
 aside nav p a {
-    color: #161514;
+   color: #161514;
    display: inline-block;
-   font-size: 75%;
+   font-size: 90%;
    font-weight: bold;
    margin: 0 0 5px 5px;
 }
