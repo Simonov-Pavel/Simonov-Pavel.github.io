@@ -17,7 +17,15 @@ main .content header {
     margin: 0 10px;
 }
 
-.content header .sort p span{
+.content header .sort p span {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.content header .sort p span:hover {
     cursor: pointer;
+    color: #51bdf0;
+    border-bottom: 1px dashed #51bdf0;
+    font-weight: bold;
 }
 

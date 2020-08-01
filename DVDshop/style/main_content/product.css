@@ -1,0 +1,43 @@
+main #main_content .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 15px 0;
+}
+
+main .intro_product figcaption {
+    text-align: center;
+}
+
+main .intro_product figcaption p a{
+    color: #747acc;
+    font-size: 75%;
+}
+
+main .intro_product picture {
+    cursor: pointer;
+    width: 175px;
+}
+
+main .intro_product figcaption p a:hover,
+main .intro_product picture:hover ~ figcaption p a{
+    color: #242eb7;
+}
+
+main .intro_product figcaption .price{
+    color: #d51616;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+main .intro_product figcaption .card{
+   background: url(../../images/cart.jpg) no-repeat;
+   display: block;
+   height: 27px;
+   margin: 0 auto;
+   width: 106px;
+}
+
+main .intro_product figcaption .card:hover {
+   background: url(../../images/cart_active.jpg) no-repeat;
+}

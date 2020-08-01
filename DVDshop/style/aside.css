@@ -1,7 +1,5 @@
 aside {
-   background-color: #f1fae9;
-   border: 1px solid #51bdf0;
-   border-radius:0 8px 8px 0;
+   
    /*float: left;*/
    margin-bottom: 50px;
    /*width:240px;*/
@@ -27,7 +25,10 @@ main header {
 }
 
 aside nav {
-    padding: 5px 8px 5px 5px;
+   padding: 5px 8px 5px 5px;
+   background-color: #f1fae9;
+   border: 1px solid #51bdf0;
+   border-radius:0 8px 8px 0;
 }
 
 aside nav p {
