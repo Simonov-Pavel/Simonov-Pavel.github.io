@@ -27,7 +27,7 @@ main .intro_product figcaption p a{
 
 main .intro_product picture {
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: block;
 }
@@ -69,10 +69,16 @@ main .intro_product figcaption .card:hover {
     main #main_content .product {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    main .intro_product figcaption p{
+        font-size: 120%;
+    }
 }
 
 @media(max-width: 480px){
     main #main_content .product {
         grid-template-columns: 1fr 1fr;
+    }
+    main .intro_product figcaption p{
+        font-size: 150%;
     }
 }
