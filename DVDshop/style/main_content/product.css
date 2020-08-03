@@ -7,13 +7,13 @@ main #main_content .product {
 
 main .intro_product figcaption {
     text-align: center;
-    max-width: 175px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 main .intro_product figcaption p a{
     color: #747acc;
-    font-size: 75%;
+    font-size: 90%;
     position: absolute;
     top: 50%;
     right: 0%;
@@ -23,7 +23,13 @@ main .intro_product figcaption p a{
 
 main .intro_product picture {
     cursor: pointer;
-    width: 175px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+main .intro_product picture img {
+    width: 100%;
 }
 
 main .intro_product figcaption p a:hover,
@@ -33,7 +39,7 @@ main .intro_product picture:hover ~ figcaption p a{
 
 main .intro_product figcaption .title{
     min-height: 42px;
-    max-width: 175px;
+    max-width: 100%;
     position: relative;
 }
 
@@ -55,15 +61,14 @@ main .intro_product figcaption .card:hover {
    background: url(../../images/cart_active.jpg) no-repeat;
 }
 
-@media(max-width: 640px){
+@media(max-width: 768px){
+    main #main_content .product {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 480px){
     main #main_content .product {
         grid-template-columns: 1fr 1fr;
-    }
-    main .intro_product picture {
-        margin: 0 auto;
-        display: block;
-    }
-    main .intro_product figcaption p a{
-        font-size: 90%;
     }
 }
