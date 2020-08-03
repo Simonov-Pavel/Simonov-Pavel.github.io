@@ -8,6 +8,7 @@ main #main_content .product {
 main .intro_product figcaption {
     text-align: center;
     max-width: 175px;
+    margin: 0 auto;
 }
 
 main .intro_product figcaption p a{
