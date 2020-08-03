@@ -7,11 +7,17 @@ main #main_content .product {
 
 main .intro_product figcaption {
     text-align: center;
+    max-width: 175px;
 }
 
 main .intro_product figcaption p a{
     color: #747acc;
     font-size: 75%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 main .intro_product picture {
@@ -22,6 +28,12 @@ main .intro_product picture {
 main .intro_product figcaption p a:hover,
 main .intro_product picture:hover ~ figcaption p a{
     color: #242eb7;
+}
+
+main .intro_product figcaption .title{
+    min-height: 42px;
+    max-width: 175px;
+    position: relative;
 }
 
 main .intro_product figcaption .price{
