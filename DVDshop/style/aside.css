@@ -54,6 +54,6 @@ aside nav p a:hover{
 
 @media(max-width: 640px){
     aside nav p a {
-   font-size: 110%;
-}
+        font-size: 110%;
+    }
 }    
