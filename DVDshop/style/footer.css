@@ -1,0 +1,29 @@
+footer {
+   background: url(../images/footer.jpg) no-repeat 2% bottom;
+   height: 123px;
+   background-color: #fff;
+}
+
+footer #pm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+}
+
+footer #copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    position: relative;
+    background: #f00;
+}
+
+footer  #copy picture{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
