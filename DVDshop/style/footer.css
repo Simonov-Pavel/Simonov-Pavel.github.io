@@ -1,7 +1,11 @@
 footer {
-   background: url(../images/footer.jpg) no-repeat 2% bottom;
+   position: relative;
    height: 123px;
    background-color: #f2f5fa;
+}
+
+footer #pm .img_cart picture {
+    cursor: pointer;
 }
 
 footer #pm {
@@ -15,7 +19,7 @@ footer #copy {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 53px;
     position: relative;
     background: #f00;
     color: #fff;
@@ -28,3 +32,12 @@ footer  #copy picture{
     top: 50%;
     transform: translateY(-50%);
 }
+
+footer #background {
+    height: inherit;
+    background: url(../images/footer.png) no-repeat 2% bottom;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
