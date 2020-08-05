@@ -4,10 +4,6 @@ footer {
    background-color: #f2f5fa;
 }
 
-footer #pm .img_cart picture {
-    cursor: pointer;
-}
-
 footer #pm {
     display: flex;
     justify-content: center;
@@ -21,7 +17,7 @@ footer #copy {
     align-items: center;
     height: 53px;
     position: relative;
-    background: #f00;
+    background: linear-gradient(#69bc27 30%, #52b206 30%);
     color: #fff;
 }
 
