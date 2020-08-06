@@ -1,8 +1,8 @@
-main #product #arrow a {
+main #main_content #arrow a {
     color: #1722b4;
     text-decoration: underline;
 }
 
-main #product #arrow a:hover {
+main #main_content #arrow a:hover {
     text-decoration: none;
 }
