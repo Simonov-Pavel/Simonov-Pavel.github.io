@@ -6,3 +6,58 @@ main #main_content #arrow a {
 main #main_content #arrow a:hover {
     text-decoration: none;
 }
+
+main #product {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    margin: 20px 0;
+    padding: 0 10px;
+    grid-gap: 20px;
+}
+
+main #product #short_story {
+    grid-column: 1/3;
+}
+
+main #product .product_title {
+    color: #58a41b;
+}
+
+main #product p {
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-size: 85%;
+}
+
+main #product p span {
+    font-weight: normal;
+}
+
+main #product .product_price {
+    display: flex;
+    margin-top: 25px;
+}
+
+main #product .product_price .price {
+    font-size: 120%;
+	font-weight: normal;
+}
+
+main #product .product_price p {
+    margin: 0 10px;
+}
+
+main #main_content #other .product {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+main #other .intro_product picture {
+    width: 80%;
+}
+
+@media(max-width: 480px){
+    main #main_content #other .product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
