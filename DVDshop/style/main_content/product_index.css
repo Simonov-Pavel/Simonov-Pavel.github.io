@@ -15,7 +15,7 @@ main .intro_product figcaption {
     margin: 0 auto;
 }
 
-main .intro_product figcaption p a{
+main .intro_product figcaption p a {
     color: #747acc;
     font-size: 90%;
     position: absolute;

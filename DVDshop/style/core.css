@@ -21,10 +21,6 @@ main {
    grid-gap: 15px;
 }
 
-.clear{
-   clear: both;
-}
-
 a{
     text-decoration: none;
     color: #fff;
