@@ -69,9 +69,7 @@ main .card:hover {
     main #main_content .product {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    main  p{
-        font-size: 120%;
-    }
+    
 }
 
 @media(max-width: 480px){
@@ -79,6 +77,6 @@ main .card:hover {
         grid-template-columns: 1fr 1fr;
     }
     main p{
-        font-size: 150%;
+        font-size: 100%;
     }
 }
