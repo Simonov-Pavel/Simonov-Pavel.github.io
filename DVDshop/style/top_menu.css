@@ -2,12 +2,9 @@
    background: linear-gradient(#81d232 0%, #5cc508 7.5%, #5cc508 92.5%, #81d232 100%);
    border: 1px solid #60be15;
    height: 41px;
-}
-
-#topmenu ul{
-   list-style: none;
-   margin: 0;
-   padding:0;
+   position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #topmenu ul li{
@@ -20,8 +17,6 @@
 }
 
 #topmenu a{
-   color: #fff;
-   text-decoration: none;
    display: block;
    padding: 10px 35px;
 }

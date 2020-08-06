@@ -38,9 +38,3 @@ ul{
  input[type='radio'] {
     display: none
 }
-
-@media(max-width: 1000px){
-    body{
-        width: 100%;
-    }
-}
