@@ -13,11 +13,11 @@
     position: relative;
 }
 
-#cart_content .cart #description {
+#cart_content .cart .description {
      padding: 30px 20px;
 }
 
-#cart_content .cart #description h4{
+#cart_content .cart .description h4{
      text-align: center;
      margin-bottom: 20px;
 }
@@ -27,13 +27,13 @@
 }
 
 
-#cart_content .cart #description input{
+#cart_content .cart .description input{
     text-align: center;
     outline: none;
     width: 40px;
 }
 
-#cart_content .cart #description p{
+#cart_content .cart .description p{
     margin: 10px 0;
 }
 
@@ -42,7 +42,12 @@
     top: 10px;
     right: 25px;
     cursor: pointer;
-    
+    opacity: 0.3;
+    transition: opacity 1s ease-out;
+}
+
+#cart_content .cart .close:hover{
+    opacity: 1;
 }
 
 #cart_content .cart .close:before,
