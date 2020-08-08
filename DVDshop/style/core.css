@@ -9,6 +9,7 @@ body{
    background-image: url(../images/bg.webp);
    margin: 0 auto;
    width: 1000px;
+   height: auto;
    font-family: Verdana, Arial, Tahoma;
 }
 
