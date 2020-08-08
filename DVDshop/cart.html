@@ -28,7 +28,7 @@
     <div id='topmenu'>
         <nav>
             <ul>
-                <li><a href='#'>ГЛАВНАЯ</a></li>
+                <li><a href='index.html'>ГЛАВНАЯ</a></li>
                 <li><a href='#'>ОПЛАТА И ДОСТАВКА</a></li>
                 <li><a href='#'>КОНТАКТЫ</a></li>
             </ul>
@@ -52,8 +52,21 @@
                 <p><a href='#'>Боевики</a></p>
             </nav>
         </aside>
-        <section id='main_content'>
+        <section id='cart_content'>
             <h2>Корзина</h2>
+            <article class='cart'>
+                <picture>
+                    <source srcset='images/product/cover.webp' type='image/webp'>
+                    <img src='images/product/cover.jpg' alt='Ледниковый период'>
+                </picture>
+                <div id='description'>
+                    <h4 class='title'>Ледниковый период: Контенентальный дрейф</h4>
+                    <p>Цена за 1шт: <span class='bold'>430</span>руб</p>
+                    <p>Колличество: <input type='number' name='count' value='1' min='1' max='10'> шт.</p>
+                    <p>Стоимость: <span class='bold'>430</span>руб</p>
+                </div>
+                <span class='close' title='Удалить из корзины'></span>
+            </article>
         </section>
     </main>
     <footer>
