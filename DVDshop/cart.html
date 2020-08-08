@@ -67,6 +67,46 @@
                 </div>
                 <span class='close' title='Удалить из корзины'></span>
             </article>
+            <article class='cart'>
+                <picture>
+                    <source srcset='images/product/who-am-i.webp' type='image/webp'>
+                    <img src='images/product/who-am-i.jpg' alt='Кто я'>
+                </picture>
+                <div id='description'>
+                    <h4 class='title'>Кто я</h4>
+                    <p>Цена за 1шт: <span class='bold'>570</span>руб</p>
+                    <p>Колличество: <input type='number' name='count' value='1' min='1' max='10'> шт.</p>
+                    <p>Стоимость: <span class='bold'>570</span>руб</p>
+                </div>
+                <span class='close' title='Удалить из корзины'></span>
+            </article>
+            <article class='cart'>
+                <picture>
+                    <source srcset='images/product/this-war.webp' type='image/webp'>
+                    <img src='images/product/this-war.jpg' alt='Это война'>
+                </picture>
+                <div id='description'>
+                    <h4 class='title'>Это война</h4>
+                    <p>Цена за 1шт: <span class='bold'>260</span>руб</p>
+                    <p>Колличество: <input type='number' name='count' value='1' min='1' max='10'> шт.</p>
+                    <p>Стоимость: <span class='bold'>260</span>руб</p>
+                </div>
+                <span class='close' title='Удалить из корзины'></span>
+            </article>
+            <div id='order'>
+                <form name='order' method='post' action='#'>
+                    <div class='order'>
+                        <p>Введите номер купона со скидкой<br/><span>(если он есть)</span></p>
+                        <input type='text' name='order'/>
+                        <input type='image' src='images/cart_discount.jpg' alt='Получить скидку' onmouseover="this.src='images/cart_discount_active.jpg'" onmouseout="this.src='images/cart_discount.jpg'"/>
+                    </div>
+                    <div class='right_order'>Итого: <span class='bold'>2000</span>руб</div>
+                    <div class='completion_order'>
+                        <input type='image' src='images/cart_recalc.jpg' alt='Пересчитать' onmouseover="this.src='images/cart_recalc_active.jpg'" onmouseout="this.src='images/cart_recalc.jpg'"/>
+                        <input type='image' src='images/cart_order.jpg' alt='Оформить' onmouseover="this.src='images/cart_order_active.jpg'" onmouseout="this.src='images/cart_order.jpg'"/>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
