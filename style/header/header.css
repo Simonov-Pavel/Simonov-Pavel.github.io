@@ -1,3 +1,31 @@
 header {
-    background: url(../../image/header1366.jpg) no-repeat;
+
+}
+
+header #top_menu{
+    background-color: rgba(171 167 167 / 30%);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header picture{
+    background-color: rgba(171 167 167 / 30%);
+    position: absolute;
+    top: 0;
+}
+
+header img{
+    width: 100%;
+    
+}
+
+header #top_menu nav ul{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(00, 00, 00, .5);
+}
+
+header #top_menu nav ul li{
+    margin: 1vw 2vw;
 }

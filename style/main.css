@@ -1,5 +1,2 @@
 @import 'core.css';
- input[type='checkbox'],
- input[type='radio'] {
-    display: none
-}
+@import 'header/header.css';
