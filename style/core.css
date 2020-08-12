@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+   font-family: Verdana, Arial, Tahoma;
+   font-size: 1vw;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+ input[type='checkbox'],
+ input[type='radio'] {
+    display: none
+}
