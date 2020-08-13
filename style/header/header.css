@@ -1,40 +1,29 @@
 header {
-    
+
 }
 
 header #top_menu{
-    background-color: rgba(33,33,33,0.5);
-    position: fixed;
-    width: 100%;
+    background-color: rgba(171 167 167 / 30%);
+    position: sticky;
+    top: 0;
     z-index: 99;
 }
 
 header picture{
+    background-color: rgba(171 167 167 / 30%);
+    position: absolute;
     top: 0;
-}
-
-header .picture {
-  position: relative;
-}
- 
-header .picture::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);  
-  z-index: 1;
 }
 
 header img{
     width: 100%;
+    
 }
 
 header #top_menu nav ul{
     display: flex;
     justify-content: flex-end;
+    background-color: rgba(00, 00, 00, .5);
 }
 
 header #top_menu nav ul li{
