@@ -29,9 +29,9 @@ header #top_menu a:after {
     width: 0%;
     left:50%;
     position:absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz--transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     -webkit-transform:translateX(-50%);
     -moz-transform:translateX(-50%);
     transform:translateX(-50%);
@@ -46,9 +46,9 @@ header #top_menu a:before {
     width: 0%;
     left:50%;
     position:absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz--transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     -webkit-transform:translateX(-50%);
     -moz-transform:translateX(-50%);
     transform:translateX(-50%);
@@ -96,12 +96,13 @@ header #text {
 
 header #text h2{
     line-height: 7vw;
+    font-style: italic;
 }
 
 header #text h1{
     letter-spacing: 1vw;
     line-height: 5vw;
-    word-spacing: 4vw;
+    
 }
 
 header #text .button{
@@ -109,4 +110,7 @@ header #text .button{
     background-color: #314ae4;
     border-radius: 2vw;
     margin-top: 10vw;
+    -webkit-transition: color .5s ease-in-out;
+    -moz--transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
