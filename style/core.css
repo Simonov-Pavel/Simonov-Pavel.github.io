@@ -7,13 +7,23 @@
 
 body{
    font-family: Verdana, Arial, Tahoma;
-   font-size: 1vw;
+   font-size: 1.5vw;
 }
 
 a{
+    display: inline-block;
     text-decoration: none;
     color: #fff;
+    line-height: 1;
+    position: relative;
+    font-weight: bold;
 }
+
+a:hover {
+    color: #9ddc63;
+}
+
+
 
 ul{
     list-style: none;

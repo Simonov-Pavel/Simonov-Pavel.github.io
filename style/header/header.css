@@ -1,31 +1,112 @@
 header {
-
+    
 }
 
 header #top_menu{
-    background-color: rgba(171 167 167 / 30%);
-    position: sticky;
-    top: 0;
-    z-index: 99;
-}
-
-header picture{
-    background-color: rgba(171 167 167 / 30%);
-    position: absolute;
-    top: 0;
-}
-
-header img{
+    background-color: rgba(33,33,33,0.5);
+    position: fixed;
     width: 100%;
-    
+    z-index: 99;
+    padding: 0 5vw;
 }
 
 header #top_menu nav ul{
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(00, 00, 00, .5);
 }
 
-header #top_menu nav ul li{
-    margin: 1vw 2vw;
+header #top_menu a{
+    margin: 2vw 2vw;
+    
+}
+
+header #top_menu a:after {
+    background-color: #9ddc63;
+    display: block;
+    margin: 10px 0;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+header #top_menu a:before {
+    background-color: #9ddc63;
+    display: block;
+    margin: -10px 0;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+header #top_menu a:hover:before,
+header #top_menu a:focus:before,
+header #top_menu a:hover:after,
+header #top_menu a:focus:after {
+    width: 80%;
+}
+
+header picture{
+    top: 0;
+}
+
+header .picture {
+    position: relative;
+}
+ 
+header .picture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);  
+    z-index: 1;
+}
+
+header img{
+    width: 100%;
+}
+
+header #text {
+    position: absolute;
+    color: #d5ef02;
+    z-index: 9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header #text h2{
+    line-height: 7vw;
+}
+
+header #text h1{
+    letter-spacing: 1vw;
+    line-height: 5vw;
+    word-spacing: 4vw;
+}
+
+header #text .button{
+    padding: 1vw 2vw;
+    background-color: #314ae4;
+    border-radius: 2vw;
+    margin-top: 10vw;
 }
