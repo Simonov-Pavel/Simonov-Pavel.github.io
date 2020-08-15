@@ -8,6 +8,7 @@
 body{
    font-family: Verdana, Arial, Tahoma;
    font-size: 1.5vw;
+   scroll-behavior: smooth;
 }
 
 h1, h3{
