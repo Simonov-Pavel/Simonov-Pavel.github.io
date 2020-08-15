@@ -55,19 +55,19 @@ header .arrow {
     position: absolute;
     z-index: 9;
     text-align: center;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 }
 .arrow span {
     display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #337AB7;
-    border-right: 5px solid #337AB7;
+    width: 3vw;
+    height: 3vw;
+    border-bottom: .5vw solid #337AB7;
+    border-right: .5vw solid #337AB7;
     transform: rotate(45deg);
     animation: arrow 2s infinite;
-    margin: -16px;
+    margin: -1.5vw;
 }
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
@@ -78,13 +78,13 @@ header .arrow {
 @keyframes arrow {
     0%{
         opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+        transform: rotate(45deg) translate(-2vw,-2vw);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(2vw,2vw);
     }
 }
