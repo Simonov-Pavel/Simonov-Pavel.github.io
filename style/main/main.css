@@ -2,4 +2,39 @@ main {
     padding: 0 5vw;
     background: url(../../images/bg320.jpg) repeat-y;
     background-size: 100%;
+    
+}
+
+main section {
+    padding: 2vw 0;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2vw;
+}
+
+main h3 {
+    font-size: 150%;
+}
+
+main .title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1vw;
+    text-indent: 0px;
+}
+
+main p {
+    color: #fff;
+    text-indent: 3vw;
+    margin:1vw 0;
+}
+
+
+
+
+
+
+footer {
+    height: 500px;
+    background: #f00;
 }
