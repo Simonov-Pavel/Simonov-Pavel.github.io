@@ -1,8 +1,11 @@
 @media (max-width: 480px){
-    header #top_menu nav{
+    header #top_menu{
+        background: rgba(33,33,33,0.7);
+        min-height: 9vw;
+    }
+    header #top_menu nav ul{
         display: none;
     }
-    
     header .menu_btn {
         display: flex;
         align-items: center;
@@ -44,7 +47,6 @@
         top: 0;
         transform: rotate(90deg);
     }
-    #check_menu:checked ~  nav,
     #check_menu:checked ~  nav ul {
         display: block;
         text-align: center;

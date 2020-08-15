@@ -53,7 +53,6 @@ header #text .button{
 
 header .arrow {
     position: absolute;
-    color: #d5ef02;
     z-index: 9;
     text-align: center;
     bottom: 10%;
@@ -67,8 +66,8 @@ header .arrow {
     border-bottom: 5px solid #337AB7;
     border-right: 5px solid #337AB7;
     transform: rotate(45deg);
-    margin: -16px;
     animation: arrow 2s infinite;
+    margin: -16px;
 }
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
