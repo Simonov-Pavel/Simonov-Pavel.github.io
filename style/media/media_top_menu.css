@@ -50,9 +50,11 @@
     #check_menu:checked ~  nav ul {
         display: block;
         text-align: center;
-        padding: 5vw 0 1vw;
-        
-        
+        padding: 5vw 0 1vw; 
     }
-    
+    .menu_btn > span,
+    .menu_btn > span::before,
+    .menu_btn > span::after {
+        transition-duration: .5s;
+    }
 }
