@@ -1,13 +1,12 @@
 main {
     padding: 0 5vw;
     background: url(../../images/bg320.jpg) repeat-y;
-    background-size: 100%;
-    
+    background-size: 100%; 
 }
 
-main section {
+main article {
     padding: 2vw 0;
-    height: 500px;
+    min-height: 500px;
     background: rgba(0, 0, 0, 0.5);
     margin-bottom: 2vw;
 }
@@ -27,6 +26,21 @@ main p {
     color: #fff;
     text-indent: 3vw;
     margin:1vw 0;
+}
+
+main article div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+    padding: 0 1vw;
+}
+
+main article section {
+    border: .1vw solid #fff;
+}
+
+main article section h4 {
+    text-align: center;
 }
 
 
