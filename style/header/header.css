@@ -23,9 +23,9 @@ header img{
 
 header #text {
     position: absolute;
-    color: #d5ef02;
-    z-index: 9;
     text-align: center;
+    color: #fff;
+    z-index: 9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,11 +33,10 @@ header #text {
 
 header #text h2{
     line-height: 7vw;
-    font-style: italic;
 }
 
 header #text h1{
-    letter-spacing: 1vw;
+    
     line-height: 5vw;
     
 }
