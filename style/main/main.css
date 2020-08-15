@@ -1,11 +1,12 @@
 main {
     padding: 0 5vw;
     background: url(../../images/bg320.jpg) repeat-y;
-    background-size: 100%; 
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 main article {
-    padding: 2vw 0;
+    padding: 2vw 1vw;
     min-height: 500px;
     background: rgba(0, 0, 0, 0.5);
     margin-bottom: 2vw;
@@ -32,11 +33,11 @@ main article div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1vw;
-    padding: 0 1vw;
 }
 
 main article section {
     border: .1vw solid #fff;
+    padding: 1vw;
 }
 
 main article section h4 {
