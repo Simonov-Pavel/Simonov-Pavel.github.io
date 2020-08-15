@@ -1,3 +1,5 @@
 main {
     padding: 0 5vw;
+    background: url(../../images/bg320.jpg) repeat-y;
+    background-size: 100%;
 }
