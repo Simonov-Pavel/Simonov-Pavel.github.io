@@ -1,0 +1,59 @@
+header #top_menu{
+    background-color: rgba(33,33,33,0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    padding: 0 5vw;
+}
+
+header #top_menu nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header #top_menu a{
+    margin: 2vw 2vw;
+    
+}
+
+header #top_menu a:after {
+    background-color: #9ddc63;
+    display: block;
+    margin: 1vw 0;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: all .5s ease-in-out;
+    -moz--transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+header #top_menu a:before {
+    background-color: #9ddc63;
+    display: block;
+    margin: -1vw 0;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: all .5s ease-in-out;
+    -moz--transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+header #top_menu a:hover:before,
+header #top_menu a:focus:before,
+header #top_menu a:hover:after,
+header #top_menu a:focus:after {
+    width: 80%;
+}
+
