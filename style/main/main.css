@@ -7,7 +7,6 @@ main {
 
 main article {
     padding: 2vw 1vw;
-    min-height: 500px;
     background: rgba(0, 0, 0, 0.5);
     margin-bottom: 2vw;
 }
@@ -45,6 +44,29 @@ main article section h4 {
     text-align: center;
     font-style: italic;
     color: #d5ef02;
+}
+
+main #about .about {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+main #about picture {
+    width: 280px;
+    border: 1px solid #fff;
+    margin: 1vw 0;
+}
+
+main #about section {
+    margin: 2vw 1vw;
+    border: none;
+}
+
+main #about a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
 }
 
 

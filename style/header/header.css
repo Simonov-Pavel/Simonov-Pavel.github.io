@@ -41,7 +41,7 @@ header #text h1{
     
 }
 
-header #text .button{
+.button{
     padding: 2vw 4vw;
     background-color: #314ae4;
     border-radius: 2vw;
