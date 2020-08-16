@@ -56,6 +56,10 @@ main #about picture {
     margin: 1vw 0;
 }
 
+main #about picture img{
+    width: 100%;
+}
+
 main #about section {
     margin: 2vw 1vw;
     border: none;
