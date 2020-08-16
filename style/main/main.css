@@ -33,12 +33,14 @@ main article div {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(291px,1fr));
     grid-gap: 1vw;
+    margin-bottom: 2vw;
 }
 
 main article section {
     border: .1vw solid #fff;
     border-radius: 1vw;
     padding: 1vw;
+    position: relative;
 }
 
 main article section h4 {
@@ -60,7 +62,7 @@ main #about picture img{
     width: 100%;
 }
 
-main #about section {
+main #about #about_me {
     margin: 2vw 1vw;
     border: none;
 }
@@ -69,8 +71,27 @@ main #about a {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 0;
+    margin: 2vw 0 0;
 }
+
+main #about #skills {
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+
+main #about #skills p {
+    opacity:0;
+}
+
+main #about #skills span {
+    position: absolute;
+    right: 5%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    color: #fff;
+    bottom: 5%;
+    cursor: pointer;
+}
+
 
 
 

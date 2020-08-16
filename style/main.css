@@ -2,5 +2,6 @@
 @import 'header/top_menu.css';
 @import 'header/header.css';
 @import 'main/main.css';
-@import 'media/media_body.css';
 @import 'media/media_top_menu.css';
+@import 'media/media_body.css';
+@import 'media/media_main.css';
