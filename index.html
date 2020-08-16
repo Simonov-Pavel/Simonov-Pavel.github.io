@@ -37,7 +37,11 @@
         
         <div class='picture'>
             <picture>
-                <source srcset='images/header_320.webp' type='image/webp'>
+                <source srcset='images/header_1366.webp' type='image/webp' media='(min-width: 1366px)'>
+                <source srcset='images/header_1024.webp' type='image/webp' media='(max-width: 1365px)'>
+                <source srcset='images/header_768.webp' type='image/webp' media='(max-width: 1023px)'>
+                <source srcset='images/header_480.webp' type='image/webp' media='(max-width: 767px)'>
+                <source srcset='images/header_320.webp' type='image/webp' media='(max-width: 479px)'>
                 <img src='images/header_320.jpg' alt='Програмист в работе'/>
             </picture>
             <div id='text'>
@@ -104,7 +108,8 @@
             <h3>ОБО МНЕ</h3>
             <div class='about'>
             <picture>
-                <source srcset='images/foto.webp' type='image/webp'>
+                <source srcset='images/foto.webp' type='image/webp' media='(max-width: 437px)'>
+                <source srcset='images/foto_big.webp' type='image/webp' media='(min-width: 438px )'>
                 <img src='images/foto.jpg' alt='Моя фотография' title='Павел Симонов'/>
             </picture>
             <section>
@@ -140,6 +145,10 @@
                 <section>
                     <h4>ИНИЦИАТИВНЫЙ</h4>
                     <p>Я инициативный человек, у которого как правило несколько решений одних и тех же задач.</p>
+                </section>
+                <section>
+                    <h4>ВЕРСТАЮ ТОЧНО С МАКЕТОМ</h4>
+                    <p>Использую PIXEL PERFECT. Это расширение помогает Вам разрабатывать сайт с попиксельной точностью (pixel perfect)!</p>
                 </section>
                 <section>
                     <h4>СДАЮ В СРОК</h4>
