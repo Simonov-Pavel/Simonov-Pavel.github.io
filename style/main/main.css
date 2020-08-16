@@ -31,17 +31,20 @@ main p {
 
 main article div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(291px,1fr));
     grid-gap: 1vw;
 }
 
 main article section {
     border: .1vw solid #fff;
+    border-radius: 1vw;
     padding: 1vw;
 }
 
 main article section h4 {
     text-align: center;
+    font-style: italic;
+    color: #d5ef02;
 }
 
 
