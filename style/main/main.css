@@ -13,6 +13,7 @@ main article {
 
 main h3 {
     font-size: 150%;
+    margin-bottom: 2vw;
 }
 
 main .title {
@@ -43,7 +44,7 @@ main article section {
 main article section h4 {
     text-align: center;
     font-style: italic;
-    color: #d5ef02;
+    color: #337AB7;
 }
 
 main #about .about {
