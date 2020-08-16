@@ -48,11 +48,10 @@ main article section h4 {
 
 main #about .about {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 30vw 1fr;
 }
 
 main #about picture {
-    width: 280px;
     border: 1px solid #fff;
     margin: 1vw 0;
 }
