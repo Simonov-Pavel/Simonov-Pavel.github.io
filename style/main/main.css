@@ -114,6 +114,10 @@ backface-visibility: hidden; /* скрываем контент, который 
 -moz-backface-visibility: hidden;
 }
 
+main #about #skills section .front picture {
+    margin: 0;
+}
+
 main #about #skills section .back {
 /* общие стили */
 width: 100%;
