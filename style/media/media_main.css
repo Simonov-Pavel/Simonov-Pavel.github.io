@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
     main article div {
-        grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(30vw,1fr));
     }
 }
