@@ -16,6 +16,10 @@ main #about #about_me {
     border: none;
 }
 
+main #about #about_me h2 {
+    color: #fff;
+}
+
 main #about a {
     position: relative;
     left: 50%;

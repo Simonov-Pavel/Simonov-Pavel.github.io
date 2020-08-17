@@ -1,3 +1,13 @@
 main #contacts section {
     border: none;
 }
+
+main #contacts section .contact {
+    display: inline-block;
+    width:70%;
+    text-align: center;
+    text-indent: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
