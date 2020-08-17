@@ -1,6 +1,7 @@
 main #about .about {
     display: grid;
     grid-template-columns: 30vw 1fr;
+    align-items: center;
 }
 
 main #about picture {
