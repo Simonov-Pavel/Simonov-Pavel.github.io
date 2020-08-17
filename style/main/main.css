@@ -144,6 +144,7 @@ transform: rotateY(180deg); /* отворачиваем задний блок */
 
 main #about #skills p {
     color: #000;
+    margin: 0;
 }
 
 main #about #skills span {
