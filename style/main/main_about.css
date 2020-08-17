@@ -30,6 +30,7 @@ main #about a {
 
 main #about #skills section {
     background: #fff;
+    display: flex;
     color: #000;
     transition:1s;
     transform-style: preserve-3d;
@@ -57,6 +58,7 @@ main #about #skills section .front {
 main #about #skills section .front picture {
     margin: 0;
     width: 90%;
+    align-items: baseline;
 }
 
 main #about #skills section .back {
@@ -81,6 +83,8 @@ main #about #skills section .back {
 main #about #skills p {
     color: #000;
     margin: 0;
+    text-indent: 0;
+    font-size: 90%;
 }
 
 main #about #skills span {
