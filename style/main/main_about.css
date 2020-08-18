@@ -30,7 +30,6 @@ main #about a {
 
 main #about #skills section {
     background: #fff;
-    display: flex;
     color: #000;
     transition:1s;
     transform-style: preserve-3d;
