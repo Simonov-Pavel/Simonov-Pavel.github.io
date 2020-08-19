@@ -30,6 +30,8 @@ main #about a {
 
 main #about #skills section {
     background: #fff;
+    height: 100%;
+    border: none;
     color: #000;
     transition:1s;
     transform-style: preserve-3d;
@@ -41,7 +43,7 @@ main #about #skills section {
     -moz-transform: rotateY(0deg);
 }
 
-main #about #skills section:hover {
+main #about #skills input:checked+label section{
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -79,6 +81,29 @@ main #about #skills section .back {
     -moz-transform: rotateY(180deg);
 }
 
+main #about #skills section::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    transition: opacity 0.6s;
+    border-radius: 1vw;
+    opacity: 0;
+}
+
+main #about #skills section:hover::after{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+main #about #skills section:hover span{
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
 main #about #skills p {
     color: #000;
     margin: 0;
@@ -88,9 +113,13 @@ main #about #skills p {
 
 main #about #skills span {
     position: absolute;
-    right: 5%;
-    transform: translateX(-50%);
-    margin-top: 0;
-    bottom: 5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
     cursor: pointer;
 }
