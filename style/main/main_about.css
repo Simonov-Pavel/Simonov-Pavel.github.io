@@ -82,7 +82,8 @@ main #about #skills section .back {
     -moz-transform: rotateY(180deg);
 }
 
-main #about #skills section::after{
+main #about #skills section .front::after,
+main #about #skills section .back::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -95,12 +96,13 @@ main #about #skills section::after{
     opacity: 0;
 }
 
-main #about #skills section:hover::after{
+main #about #skills section .front:hover::after,
+main #about #skills section .back:hover::after {
     opacity: 1;
     transition: opacity 1s ease;
 }
 
-main #about #skills section:hover span{
+main #about #skills section .front:hover span{
     opacity: 1;
     transition: opacity 2s ease-in-out;
 }
