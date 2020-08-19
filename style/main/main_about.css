@@ -30,6 +30,7 @@ main #about a {
 
 main #about #skills section {
     background: #fff;
+    display: grid;
     height: 100%;
     border: none;
     color: #000;
@@ -116,7 +117,7 @@ main #about #skills span {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: bold;
     color: #fff;
     z-index: 1;
