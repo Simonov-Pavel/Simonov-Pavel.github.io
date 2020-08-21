@@ -1,0 +1,32 @@
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2vw;
+}
+
+footer #footer_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer #footer_top h2{
+    margin: 1vw 3vw;
+}
+
+footer #footer_top .button{
+    margin-top: 2vw;;
+}
+
+footer #footer_top figure{
+    display: flex;
+    align-items: center;
+}
+
+footer #footer_top figure figcaption{
+    margin-left: 2vw;
+}

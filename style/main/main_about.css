@@ -31,7 +31,7 @@ main #about a {
     transform: translateX(-50%);
 }
 
-main #about #skills section {
+main #about #skills label section {
     background: #fff;
     display: grid;
     align-items: center;
@@ -135,8 +135,8 @@ main #about #skills span {
     cursor: pointer;
 }
 
-main #about #skills section .front:hover span,
-main #about #skills section .back:hover span{
+main #about #skills .front:hover span,
+main #about #skills .back:hover span{
     opacity: 1;
     -webkit-transform: opacity 2s ease-in-out;
     -moz-transform: opacity 2s ease-in-out;
