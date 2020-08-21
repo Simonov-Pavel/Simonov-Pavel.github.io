@@ -33,6 +33,7 @@ main #about a {
 main #about #skills section {
     background: #fff;
     display: grid;
+    align-items: center;
     height: 100%;
     border: none;
     color: #000;
@@ -63,11 +64,7 @@ main #about #skills section .back {
     backface-visibility: hidden;
 }
 
-main #about #skills section .front picture {
-    margin: 0;
-    width: 90%;
-    align-items: baseline;
-}
+
 
 main #about #skills section .back {
     width: 100%;

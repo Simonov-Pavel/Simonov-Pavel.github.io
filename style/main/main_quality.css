@@ -1,5 +1,6 @@
 main #quality section {
     background: #fff;
+    min-height: 140px;
 }
 
 main #quality section img {
