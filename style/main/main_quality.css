@@ -1,0 +1,19 @@
+main #quality section {
+    background: #fff;
+}
+
+main #quality section img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main #quality section h4,
+main #quality section p {
+    opacity: 0;
+}
+
+main #quality section:hover>h4 {
+    opacity:1;
+}
