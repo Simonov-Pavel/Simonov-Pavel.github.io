@@ -24,8 +24,10 @@ main #about #about_me h2 {
 main #about a {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
     margin: 2vw 0 0;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 main #about #skills section {
@@ -34,27 +36,30 @@ main #about #skills section {
     height: 100%;
     border: none;
     color: #000;
-    transition:1s;
-    transform-style: preserve-3d;
-    -webkit-transition:1s;
-    -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateY(0deg);
-    -moz-transition:1s;
-    -moz-transform-style: preserve-3d;
     -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s;
 }
 
 main #about #skills input:checked+label section{
-    transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 main #about #skills section .front {
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 main #about #skills section .front picture {
@@ -74,15 +79,15 @@ main #about #skills section .back {
     border-radius: 1vw;
     padding: 1vw;
     background: #fff;
-    backface-visibility: hidden;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
     -webkit-backface-visibility: hidden;
-    -webkit-transform: rotateY(180deg);
     -moz-backface-visibility: hidden;
-    -moz-transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
-main #about #skills section .front::after,
+main #about #skills section .front::before,
 main #about #skills section .back::after {
     content: '';
     position: absolute;
@@ -96,15 +101,12 @@ main #about #skills section .back::after {
     opacity: 0;
 }
 
-main #about #skills section .front:hover::after,
+main #about #skills section .front:hover::before,
 main #about #skills section .back:hover::after {
     opacity: 1;
+    -moz-transform: opacity 1s ease;
+    -webkit-transform: opacity 1s ease;
     transition: opacity 1s ease;
-}
-
-main #about #skills section .front:hover span{
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
 }
 
 main #about #skills p {
@@ -118,6 +120,8 @@ main #about #skills span {
     position: absolute;
     left: 50%;
     top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 2.5vw;
     font-weight: bold;
@@ -125,4 +129,12 @@ main #about #skills span {
     z-index: 1;
     opacity: 0;
     cursor: pointer;
+}
+
+main #about #skills section .front:hover span,
+main #about #skills section .back:hover span{
+    opacity: 1;
+    -webkit-transform: opacity 2s ease-in-out;
+    -moz-transform: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
 }
