@@ -1,6 +1,8 @@
 main #quality section {
     background: #fff;
     min-height: 140px;
+    border:none;
+    transition: all 2s ease-in-out;
 }
 
 main #quality section img {
@@ -8,13 +10,30 @@ main #quality section img {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    transition: all 1s ease-in-out;
 }
 
-main #quality section h4,
+
 main #quality section p {
     opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
 }
 
-main #quality section:hover>h4 {
-    opacity:1;
+main #quality section h4 {
+    text-decoration: underline;
 }
+
+main #quality section:hover img {
+    transform:scale(0);
+    transition: all 1s ease-in-out;
+}
+
+main #quality section:hover p {
+    transform:scale(1); 
+    opacity: 1;
+    color: #000;
+    transition: all 1s ease-in-out;
+}
+
+

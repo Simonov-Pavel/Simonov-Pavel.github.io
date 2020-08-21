@@ -6,6 +6,7 @@ main #about .about {
 
 main #about picture {
     margin: 1vw 0;
+    width: 90%;
 }
 
 main #about picture img{
@@ -106,7 +107,7 @@ main #about #skills section .back::after {
 
 main #about #skills section .front:hover::after,
 main #about #skills section .back:hover::after {
-    opacity: 1 !important;
+    opacity: 1;
     -moz-transform: opacity 1s ease;
     -webkit-transform: opacity 1s ease;
     transition: opacity 1s ease;
