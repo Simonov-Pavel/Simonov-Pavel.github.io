@@ -11,3 +11,17 @@ main #contacts section .contact {
     left: 50%;
     transform: translateX(-50%);
 }
+
+main #contacts #desctop_contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main #contacts #desctop_contact figure {
+    text-align: center;
+}
+
+main #contacts #mobile_contact {
+    display: none;
+}
+
