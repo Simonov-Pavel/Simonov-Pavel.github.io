@@ -56,7 +56,8 @@ main #about #skills input:checked+label section{
     backface-visibility: hidden;
 }
 
-main #about #skills section .front {
+main #about #skills section .front,
+main #about #skills section .back {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -137,4 +138,7 @@ main #about #skills section .back:hover span{
     -webkit-transform: opacity 2s ease-in-out;
     -moz-transform: opacity 2s ease-in-out;
     transition: opacity 2s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
