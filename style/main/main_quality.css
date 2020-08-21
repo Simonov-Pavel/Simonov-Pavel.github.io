@@ -3,6 +3,7 @@ main #quality section {
     min-height: 140px;
     border:none;
     transition: all 2s ease-in-out;
+    display: grid;
 }
 
 main #quality section img {
