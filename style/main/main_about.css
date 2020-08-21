@@ -124,9 +124,15 @@ main #about #skills section .back::after {
     backface-visibility: hidden;
 }
 
-main #about #skills section .front:hover::before,
 main #about #skills section .back:hover::after {
-    opacity: 1;
+    opacity: 1 !important;
+    -moz-transform: opacity 1s ease;
+    -webkit-transform: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+main #about #skills section .front:hover::before{
+    opacity: 1 !important;
     -moz-transform: opacity 1s ease;
     -webkit-transform: opacity 1s ease;
     transition: opacity 1s ease;
