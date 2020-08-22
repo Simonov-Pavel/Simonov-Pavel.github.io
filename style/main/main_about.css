@@ -12,7 +12,7 @@ main #about picture {
 main #skills picture {
     justify-content: center;
     display: grid;
-    margin: 0;
+
 }
 
 main #about picture img{
@@ -40,6 +40,10 @@ main #about a {
 main #about #skills section {
     padding: 0;
     border: none;
+}
+
+main #about #skills section div {
+    margin-bottom: 0;
 }
 
 main #about #skills label .section {
