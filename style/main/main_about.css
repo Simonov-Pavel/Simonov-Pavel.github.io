@@ -5,7 +5,7 @@ main #about .about {
 }
 
 main #about picture {
-    margin: 1vw 0;
+    margin: 1vw auto;
     width: 90%;
 }
 
@@ -46,7 +46,7 @@ main #about #skills section div {
     margin-bottom: 0;
 }
 
-main #about #skills label .section {
+main #about #skills .section {
     background: #fff;
     display: grid;
     height: 100%;
@@ -64,7 +64,34 @@ main #about #skills label .section {
     transition:1s;
 }
 
-main #about #skills input:checked+label .section{
+main #about #skills section .close {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 150%;
+    z-index:90;
+    font-weight: bold;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+}
+
+main #about #skills input:checked+label {
+    opacity: 1;
+    -webkit-transition: all 2s ease-in-out 2s;
+    -moz-transition: all 2s ease-in-out 2s;
+    transition: all 2s ease-in-out 2s;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+main #about #skills input:checked+label+.section{
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -79,8 +106,6 @@ main #about #skills section .back {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-
 
 main #about #skills section .back {
     width: 100%;
@@ -101,8 +126,7 @@ main #about #skills section .back {
     backface-visibility: hidden;
 }
 
-main #about #skills section .front::after,
-main #about #skills section .back::after {
+main #about #skills section .front::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -120,9 +144,17 @@ main #about #skills section .back::after {
     backface-visibility: hidden;
 }
 
-main #about #skills section .front:hover::after,
-main #about #skills section .back:hover::after {
+main #about #skills section .front:hover::after{
     opacity: 1;
+    -moz-transform: opacity 1s ease;
+    -webkit-transform: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+main #about #skills section .back:hover::after {
+    opacity: 1!important;
+    position: relative;
+    z-index: 8888;
     -moz-transform: opacity 1s ease;
     -webkit-transform: opacity 1s ease;
     transition: opacity 1s ease;
@@ -137,11 +169,12 @@ main #about #skills p {
 
 main #about #skills span {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-self: center;
+    top: 0;
     font-size: 2.5vw;
     font-weight: bold;
     color: #fff;
