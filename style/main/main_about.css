@@ -9,6 +9,12 @@ main #about picture {
     width: 90%;
 }
 
+main #skills picture {
+    justify-content: center;
+    display: grid;
+    margin: 0;
+}
+
 main #about picture img{
     width: 100%;
 }
@@ -31,12 +37,17 @@ main #about a {
     transform: translateX(-50%);
 }
 
-main #about #skills label section {
+main #about #skills section {
+    padding: 0;
+    border: none;
+}
+
+main #about #skills label .section {
     background: #fff;
     display: grid;
-    align-items: center;
     height: 100%;
     border: none;
+    border-radius: 1vw;
     color: #000;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
@@ -49,7 +60,7 @@ main #about #skills label section {
     transition:1s;
 }
 
-main #about #skills input:checked+label section{
+main #about #skills input:checked+label .section{
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
