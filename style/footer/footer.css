@@ -6,11 +6,21 @@ footer {
 
 footer #footer_top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
     grid-gap: 3vw;
 }
 
-footer a {
+footer #footer_top section{
+    text-align: center;
+    padding: 2vw;
+}
+
+footer #footer_top section ul li{
+    text-align: left;
+    margin: 1vw 0;
+}
+
+footer .underline {
     text-decoration: underline;
 }
 
