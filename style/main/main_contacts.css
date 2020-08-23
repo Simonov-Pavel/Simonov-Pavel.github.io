@@ -4,7 +4,6 @@ main #contacts section {
 
 main #contacts section .contact {
     display: inline-block;
-    width:70%;
     text-align: center;
     text-indent: 0;
     position: relative;
@@ -12,9 +11,8 @@ main #contacts section .contact {
     transform: translateX(-50%);
 }
 
-main #contacts #desctop_contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+main #contacts figcaption p{
+    user-select: text;
 }
 
 main #contacts #desctop_contact figure {

@@ -6,22 +6,34 @@ footer {
 
 footer #footer_top {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 3vw;
 }
 
 footer #footer_top section{
-    text-align: center;
     padding: 2vw;
+    margin: 0 auto;
+}
+
+footer #footer_top section hr {
+    width: 20vw;
+    margin: 1vw 0;
+}
+
+footer #footer_top section h2 {
+    text-align: center;
 }
 
 footer #footer_top section ul li{
-    text-align: left;
     margin: 1vw 0;
 }
 
 footer .underline {
     text-decoration: underline;
+}
+
+footer .cart {
+    margin: 0 1vw;
 }
 
 footer #footer_top h2{
@@ -35,6 +47,10 @@ footer #footer_top .button{
 footer #footer_top figure{
     display: flex;
     align-items: center;
+}
+
+footer #footer_top figure img {
+    width: 24px;
 }
 
 footer #footer_top figure figcaption{
