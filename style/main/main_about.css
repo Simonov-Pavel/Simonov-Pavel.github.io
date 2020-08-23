@@ -143,9 +143,6 @@ main #about #skills section .back {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 main #about #skills section .front::after{
@@ -173,15 +170,6 @@ main #about #skills section .front:hover::after{
     transition: opacity 1s ease;
 }
 
-main #about #skills section .back:hover::after {
-    opacity: 1!important;
-    position: relative;
-    z-index: 8888;
-    -moz-transform: opacity 1s ease;
-    -webkit-transform: opacity 1s ease;
-    transition: opacity 1s ease;
-}
-
 main #about #skills p {
     color: #000;
     margin: 0;
@@ -191,11 +179,11 @@ main #about #skills p {
 
 main #about #skills span {
     position: absolute;
-    display: flex;
+    display: grid;
     width: 100%;
     height: 100%;
     align-items: center;
-    justify-self: center;
+    justify-items: center;
     top: 0;
     font-size: 2.5vw;
     font-weight: bold;
@@ -205,8 +193,7 @@ main #about #skills span {
     cursor: pointer;
 }
 
-main #about #skills .front:hover span,
-main #about #skills .back:hover span{
+main #about #skills .front:hover span{
     opacity: 1;
     -webkit-transform: opacity 2s ease-in-out;
     -moz-transform: opacity 2s ease-in-out;
