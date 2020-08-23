@@ -1,13 +1,13 @@
 footer {
-    background: #333;
     color: #fff;
-    padding: 2vw;
 }
 
 footer #footer_top {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 3vw;
+    background: #333;
+    padding: 2vw;
 }
 
 footer #footer_top section{
@@ -55,4 +55,11 @@ footer #footer_top figure img {
 
 footer #footer_top figure figcaption{
     margin-left: 2vw;
+}
+
+footer #footer_bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 2vw;
+    font-size: 120%;
 }
