@@ -66,10 +66,10 @@ main #about #skills .section {
 
 main #about #skills section .close {
     position: absolute;
-    top: 85%;
-    right: 1vw;
-    height: 30px;
-    width: 30px;
+    top: 0;
+    left: 0;
+    height: 3vw;
+    width: 3vw;
     z-index:90;
     font-weight: bold;
     opacity: 0.3; 
@@ -82,9 +82,9 @@ main #about #skills section .close:hover {
 main #about #skills section .close::after,
 main #about #skills section .close::before {
     position: absolute;
-    left: 15px;
+    left: 1.5vw;
     content: '';
-    height: 31px;
+    height: 3vw;
     width: 2px;
     background-color: #333;
 }
