@@ -14,10 +14,13 @@ opacity:0;
 pointer-events:none
 }
  
-.modal:target
+.modal:target,
+.modal:target .text,
+.modal:target a[href="#close"]
 {
 opacity:1;
-pointer-events:auto
+pointer-events:auto;
+transition: opacity 1s ease-in;
 }
 
 .modal .modal__modal{
@@ -26,10 +29,11 @@ position: relative;
 
 .modal .text{
 width:80vw;
-max-height: 65vh;
+max-height: 80vh;
 overflow: auto;
 background:#fff;
 -webkit-animation:minimise 511ms linear;
+opacity: 0;
 padding:2vw;
 border-radius:7px;
 box-shadow:0 3px 9px #000;
@@ -70,7 +74,8 @@ text-shadow:0 1px 0 #fff;
     position:absolute;
     right:0;
     top:0;
-    color:transparent
+    color:transparent;
+    opacity: 0;
 }
 
 .modal a[href="#close"]:after{
@@ -89,7 +94,7 @@ text-shadow:0 1px 0 #fff;
     color:#fff;
     border:3px solid #fff;
     border-radius:19px;
-    box-shadow:0 1px 3px #000
+    box-shadow:0 1px 3px #000;
 }
 .modal a[href="#close"]:focus:after,
 .modal a[href="#close"]:hover:after{
