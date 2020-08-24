@@ -1,0 +1,78 @@
+/* Слой перекрытия */
+ .modal{
+display: flex;
+justify-content: center;
+align-items: center;
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,.5);
+z-index:999;
+/* Трансформации прозрачности при открытии */
+transition:opacity 511ms ease-in;
+/*Скрываем изначально*/
+opacity:0;pointer-events:none
+}
+ 
+/* Показываем модальное окно */
+.modal:target
+{
+opacity:1;
+pointer-events:auto
+}
+/* Содержание */
+.modal .modal__modal{
+position: relative;
+}
+.modal .text{
+width:80vw;
+max-height: 80vh;
+overflow: auto;
+background:#fff;
+-webkit-animation:minimise 511ms linear; /*По умолчанию минимизируем анимацию*/
+/*Придаем хороший вид*/
+padding:2vw;
+border-radius:7px;
+box-shadow:0 3px 9px #000;
+text-shadow:0 1px 0 #fff;
+}
+/*Изменяем анимацию при открытии модального окна*/
+.modal:target>div{
+-webkit-animation-name:bounce
+}
+.modal .text::-webkit-scrollbar {
+  width: 0;
+}
+
+@-webkit-keyframes bounce{0%{-webkit-transform:scale3d(.1,.1,1);
+-webkit-box-shadow:0 3px 9px #000}55%{-webkit-transform:scale3d(1,1,1);
+-webkit-box-shadow:0 9px 9px #000}75%{-webkit-transform:scale3d(1,1,1);
+-webkit-box-shadow:0 0 9px #000}100%{-webkit-transform:scale3d(1,1,1);
+-webkit-box-shadow:0 3px 9px #000}}
+@-webkit-keyframes minimise{0%{-webkit-transform:scale3d(1,1,1)}100%{-webkit-transform:scale3d(.1,.1,1)}}
+/*Ссылка на кнопку Закрыть*/
+.modal a[href="#close"]{position:absolute;right:0;top:0;color:transparent}
+/*Сбрасываем изменения*/
+.modal a[href="#close"]:focus{outline:none}
+/*Создаем кнопку Закрыть*/
+.modal a[href="#close"]:after{content:'X';display:block;
+/*Позиционируем*/
+position:absolute;right:-9px;top:-9px;width:19px;padding:1px;
+/*Стили*/
+text-decoration:none;
+text-shadow:none;
+text-align:center;
+font-weight:bold;
+background:#000;
+color:#fff;
+border:3px solid #fff;
+border-radius:19px;
+box-shadow:0 1px 3px #000
+}
+.modal a[href="#close"]:focus:after,.modal a[href="#close"]:hover:after{-webkit-transform:scale(1.1,1.1);
+-moz-transform:scale(1.1,1.1);
+}
+.modal a[href="#close"]:focus:after{outline:0 solid #000}
+.modal p{color:#000;}
