@@ -23,6 +23,11 @@ main  .desctop_contact figure {
     text-align: center;
 }
 
+main  .desctop_contact {
+    display: flex;
+    justify-content: space-around;
+}
+
 main  .mobile_contact {
     display: none;
     text-align: center;
