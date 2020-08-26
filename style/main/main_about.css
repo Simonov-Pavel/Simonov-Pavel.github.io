@@ -67,7 +67,7 @@ main #about #skills .section {
 main #about #skills section .close {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 3vw;
     width: 3vw;
     z-index:90;
@@ -143,6 +143,10 @@ main #about #skills section .back {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
+}
+
+main #about #skills section .back h4{
+    padding-right: 3vw;
 }
 
 main #about #skills section .front::after{
