@@ -6,12 +6,12 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 body{
    font-family: Verdana, Arial, Tahoma;
    font-size: 1.4vw;
-   scroll-behavior: smooth;
 }
 
 h1, h3{
