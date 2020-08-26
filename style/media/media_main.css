@@ -5,10 +5,10 @@
 }
 
 @media (max-width: 768px) {
-    main #contacts #mobile_contact {
-        display: block;
+    main .mobile_contact {
+        display: flex;
     }
-    main #contacts #desctop_contact {
+    main .desctop_contact {
         display: none;
     }
 }

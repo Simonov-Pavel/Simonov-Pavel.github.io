@@ -6,7 +6,7 @@ main #contacts section {
     border: none;
 }
 
-main #contacts section .contact {
+main .contact {
     display: inline-block;
     text-align: center;
     text-indent: 0;
@@ -15,15 +15,15 @@ main #contacts section .contact {
     transform: translateX(-50%);
 }
 
-main #contacts figcaption p{
+main figcaption p{
     user-select: text;
 }
 
-main #contacts #desctop_contact figure {
+main  .desctop_contact figure {
     text-align: center;
 }
 
-main #contacts #mobile_contact {
+main  .mobile_contact {
     display: none;
     text-align: center;
 }
