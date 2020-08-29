@@ -66,12 +66,17 @@ main article section h4 {
         animation:hoverWave linear 1s infinite;
 }
 
+.button_top a {
+    width:100%;
+    height:100%;
+}    
+
 .button_top span {
     display: block;
     width: 3vw;
     height: 3vw;
-    border-left: 0.5vw solid #999;
-    border-top: 0.5vw solid #999;
+    border-left: 0.5vw solid #fff;
+    border-top: 0.5vw solid #fff;
     transform: rotate(45deg);
     animation: arrow_top 2s infinite;
     margin: -2.5vw 2vw;
@@ -84,13 +89,6 @@ main article section h4 {
 .button_top span:nth-child(3){
     animation-delay: -1s;
 }
-
-.button_top:hover {
-        background:#fff;
-        transition: 1s;
-}
-
-
 
 @-webkit-keyframes hoverWave {
         0% {
@@ -130,6 +128,6 @@ main article section h4 {
 }
 100% {
     opacity: 0;
-    transform: rotate(45deg) translate(0vw,0vw);
+    transform: rotate(45deg) translate(-3vw,-3vw);
 }
 
