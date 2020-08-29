@@ -48,4 +48,88 @@ main article section h4 {
     color: #337AB7;
 }
 
+.button_top {
+        background:#38a3fd;
+        border:0.2vw solid #38a3fd;
+        border-radius:50%;
+        box-shadow:0 0.8vw 1vw rgba(56,163,253,0.3);
+        cursor:pointer;
+        height:7vw;
+        width:7vw;
+        position: fixed;
+        right: 3vw;
+        bottom: 3vw;
+        overflow: hidden;
+        z-index:999;
+        transition: 1s;
+        -webkit-animation:hoverWave linear 1s infinite;
+        animation:hoverWave linear 1s infinite;
+}
+
+.button_top span {
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    border-left: 0.5vw solid #999;
+    border-top: 0.5vw solid #999;
+    transform: rotate(45deg);
+    animation: arrow_top 2s infinite;
+    margin: -2.5vw 2vw;
+    opacity: 0;
+}
+
+.button_top span:nth-child(2){
+    animation-delay: -0.5s;
+}
+.button_top span:nth-child(3){
+    animation-delay: -1s;
+}
+
+.button_top:hover {
+        background:#fff;
+        transition: 1s;
+}
+
+
+
+@-webkit-keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}@keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}
+
+@keyframes arrow_top {
+    0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(5vw,5vw);
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0vw,0vw);
+}
 
