@@ -1,0 +1,26 @@
+#portfolio {
+    color: #fff;
+}
+
+.portfolio_work section {
+    display: grid;
+    grid-template-columns: 258px minmax(300px,1fr);
+}
+
+.portfolio_work h2 {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.portfolio_work section .description {
+    padding: 0 2vw;
+    display: block;
+}
+
+.portfolio_work section .description span {
+    font-weight: 600;
+}
+
+.portfolio_work section picture img {
+    width: 100%;
+}
