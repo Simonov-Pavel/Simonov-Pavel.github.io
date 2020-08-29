@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>Портфолио - HTML верстальщик.</title>
+   <meta name="robots" content="index, follow" />
+   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" /><meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+   <meta name='description' content='Примеры моих работ, верстка HTML, верстка CSS, верстка JS'>
+   <meta name='keywords' content='Портфолио, портфолио верстальщика, html верстка, верстальщик, 
+   заказать верстку, примеры верстки'>
+   <meta name='author' content='Павел Симонов'/>
+   <!--<base href='http://Simonov-Pavel.github.io' />-->
+   <meta name="google-site-verification" content="S5svv1VlClEnv1dvdnF6axrMyaWLD2Un-gJ4LgOo-fM" />
+   <meta name="yandex-verification" content="2a2f31431cbc3598" />
+   <link rel='stylesheet' type='text/css' href='style/main.css'>
+   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' >
+   <!--[if IE 8]>
+		<link rel="stylesheet" href="style/ie8.css" type="text/css" >
+	<![endif]-->
+</head>
+<body>
+    <header>
+        <div id='top_menu'>
+        <input type='checkbox' id='check_menu'>
+            <label for='check_menu' class='menu_btn'>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href='https://simonov-pavel.github.io' title='Main'>ГЛАВНАЯ</a></li>
+                    <li><a href='https://simonov-pavel.github.io/about.html' title='About me'>ОБО МНЕ</a></li>
+                    <li><a href='#' title='Portfolio'>ПОРТФОЛИО</a></li>
+                    <li><a href='https://simonov-pavel.github.io/contacts.html' title='Contacts'>КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class='picture'>
+            <picture>
+                <source srcset='images/header_1366.webp' type='image/webp' media='(min-width: 1366px)'>
+                <source srcset='images/header_1024.webp' type='image/webp' media='(max-width: 1365px)'>
+                <source srcset='images/header_768.webp' type='image/webp' media='(max-width: 1023px)'>
+                <source srcset='images/header_480.webp' type='image/webp' media='(max-width: 767px)'>
+                <source srcset='images/header_320.webp' type='image/webp' media='(max-width: 479px)'>
+                <img src='images/header_320.jpg' alt='Програмист в работе'/>
+            </picture>
+            <div id='text'>
+                <h1>ПРОФЕССИОНАЛЬНАЯ<br/>ВЕРСТКА САЙТОВ</h1>
+                <h2>HTML верстальщик - Павел Симонов</h2>
+                <a href='https://simonov-pavel.github.io/contacts.html' class='button' title='Contacts'>СВЯЗАТЬСЯ СО МНОЙ</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article id='portfolio'>
+            <h3>ПОРТФОЛИО</h3>
+        </article>
+        <div id="modal_3" class="modal">
+            <div class='modal__modal'>
+                <article class='text'>
+                    <h2>ЗАКАЗАТЬ ВЕРСТКУ САЙТА</h2>
+                    <p>Чтобы назвать точные сроки и цену - мне необходимо посмотреть все макеты, которые 
+                    нужно сверстать, а так же ознакомиться с ТЗ (если таковое имеется)</p>
+                    <p>Чтобы связаться со мной вы можете позвонить мне, или написать на почту , а 
+                    так же можно найти найти меня в социальных мессенджерах Viber и WhatsApp.</p>
+                    <div class='mobile_contact'>
+                            <p class='contact'>
+                                <a href='tel:+7(983)404-19-15' title='Позвонить'>
+                                    <img src='images/tel.png' alt='Иконка телефона'>
+                                </a>
+                                <a href='mailto:simonov.pavel0306@yandex.ru' title='Написать'>
+                                    <img src='images/mail.png' alt='Иконка почты'>
+                                </a>
+                                <a title='WhatsApp' href='whatsapp://send?phone=+79834041915'>
+                                    <img src='images/whatsapp.png' alt='Иконка WhatsApp'>
+                                </a>
+                                <a title='Viber' href='viber://add?number=79834041915'>
+                                    <img src='images/viber.png' alt='Иконка Viber'>
+                                </a>
+                            </p>
+                        </div>
+                        <div class='desctop_contact'>
+                            <figure>
+                                <a href='tel:+7(983)404-19-15' title='Позвонить'>
+                                    <img src='images/tel.png' alt='Иконка телефона'>
+                                </a>
+                                <figcaption>
+                                    <p>+7(983)404-19-15</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <a href='mailto:simonov.pavel0306@yandex.ru' title='Написать'>
+                                    <img src='images/mail.png' alt='Иконка почты'>
+                                </a>
+                                <figcaption>
+                                    <p>simonov.pavel0306@yandex.ru</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <a title='WhatsApp' href='whatsapp://send?phone=+79834041915'>
+                                    <img src='images/whatsapp.png' alt='Иконка WhatsApp'>
+                                </a>
+                                <figcaption>
+                                    <p>+7(983)404-19-15</p>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <a title='Viber' href='viber://chat?number=+79834041915'>
+                                    <img src='images/viber.png' alt='Иконка Viber'>
+                                </a>
+                                <figcaption>
+                                    <p>+7(983)404-19-15</p>
+                                </figcaption>
+                            </figure>            
+                        </div>
+                </article>
+                <a href="#close" title="Закрыть"></a>
+            </div>
+        </div>
+        <div class='button_top'>
+            <a href='#' title='back up'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div id='footer_top'>
+            <section>
+                <h2>О САЙТЕ</h2>
+                <p>Профессиональная верстка сайтов по PSD макетам на заказ. Верстка сайтов, интернет-магазинов
+                и Landing Page без посадки на CMS.</p>
+                <p>Сайт-портфолио HTML-верстальщика, где вы можете заказать качественную, сематическую и 
+                адаптивную верстку для вашего сайта. Принимаются заказы на правки по сайту, устранение 
+                багов верстки, и верстку отдельных страниц.</p>
+                <a href='#modal_3' class='button' title='Contacts'>ЗАКАЗАТЬ ВЕРСТКУ</a>
+            </section>
+            <section>
+                <h2>ДОП.УСЛУГИ</h2>
+                <p>Консультирую по вопросам верстки сайтов и следующих технологий: HTML, CSS, JS.</p>
+                <p>Доработка верстки:</p>
+                <ul>
+                    <li>- Оперативно и Качественно.</li>
+                    <li>- Учитывая ваши пожелания.</li>
+                    <li>- Тестирование кроссбраузерности готовой верстки.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>ИНФОРМАЦИЯ</h2>
+                <ul>
+                    <li><a href='https://simonov-pavel.github.io/info/usloviya-ispolzovaniya-saita.html' class='underline openModal'>- Условия использования сайта</a></li>
+                    <li><a href='https://simonov-pavel.github.io/info/politika-konfidenczialnosti.html' class='underline openModal'>- Политика конфиденциальности</a></li>
+                </ul>
+                <hr>
+                <h4>Принимаю к оплате</h4>
+                <p>
+                    <img src='images/cart_1.jpg' alt='Карты VISA' class='cart'>
+                    <img src='images/cart_2.jpg' alt='Карты MASTERCART' class='cart'>
+                </p>
+                <hr>
+            </section>
+            <section>
+                <h2>КОНТАКТЫ</h2>
+                <p class='contact'>Вы всегда можете задать интересующие Вас вопросы или предложить 
+                сотрудничество по приведенным ниже контактным данным. На связи в будничные дни 
+                с 8-00 до 20-00 по Московскому времени.</p>
+                    <figure>
+                        <a href='tel:+7(983)404-19-15' title='Позвонить'>
+                            <img src='images/tel.png' alt='Иконка телефона'>
+                        </a>
+                        <figcaption>
+                            <a href='tel:+7(983)404-19-15' title='Позвонить'>
+                                +7(983)404-19-15
+                            </a>  
+                        </figcaption>
+                    </figure>
+                    <figure>
+                         <a href='mailto:simonov.pavel0306@yandex.ru' title='Написать'>
+                            <img src='images/mail.png' alt='Иконка почты'>
+                         </a>
+                        <figcaption>
+                            <a href='mailto:simonov.pavel0306@yandex.ru' title='Написать'>
+                                simonov.pavel0306@yandex.ru
+                            </a>
+                            
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a title='WhatsApp' href='whatsapp://send?phone=+79834041915'>
+                            <img src='images/whatsapp.png' alt='Иконка WhatsApp'>
+                        </a>
+                        <figcaption>
+                            <a title='WhatsApp' href='whatsapp://send?phone=+79834041915'>
+                                +7(983)404-19-15
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a title='Viber' href='viber://chat?number=+79834041915'>
+                            <img src='images/viber.png' alt='Иконка Viber'>
+                        </a>
+                        <figcaption>
+                            <a title='Viber' href='viber://chat?number=+79834041915'>
+                                +7(983)404-19-15
+                            </a>
+                        </figcaption>
+                     </figure>
+            </section>
+        </div>
+        <div id='footer_bottom'>
+            <p>Copyright &copy Павел Симонов 2017-2020 Все права защищены</p>
+            <p>Копирование авторских текстов с сайта запрещено.</p>
+            <p>
+                Ознакомтесь с <a href='https://simonov-pavel.github.io/info/usloviya-ispolzovaniya-saita.html' class='underline openModal'> условиями использования </a> сайта
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
