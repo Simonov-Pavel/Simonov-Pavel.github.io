@@ -55,10 +55,12 @@ main article section h4 {
         box-shadow:0 0.8vw 1vw rgba(56,163,253,0.3);
         cursor:pointer;
         height:7vw;
+        min-height:30px;
         width:7vw;
+        min-width:30px;
         position: fixed;
         right: 3vw;
-        bottom: -10vw;
+        bottom: -15vw;
         overflow: hidden;
         z-index:999;
         transition: 1s;
@@ -91,9 +93,8 @@ main article section h4 {
 }
 
 @keyframes top {
-    0%{bottom:-10vw}
-    50%{bottom:-10vw}
-    90%{bottom:-10vw}
+    0%{bottom:-15vw}
+    90%{bottom:-15vw}
     100%{bottom:3vw}
 }
 

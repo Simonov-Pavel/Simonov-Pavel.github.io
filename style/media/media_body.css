@@ -1,6 +1,9 @@
-@media (min-width: 1700px) {
+@media (min-width: 1300px) {
     body {
         font-size: 1vw;
+    }
+    footer #footer_top {
+        grid-gap:1vw;
     }
 }
 
