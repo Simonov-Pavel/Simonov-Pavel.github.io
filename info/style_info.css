@@ -519,10 +519,11 @@ text-shadow:0 1px 0 #fff;
 }
 
 @media (max-width: 768px) {
-    main .mobile_contact {
-        display: flex;
+    .modal .mobile_contact {
+        display: block;
+        text-align: center;
     }
-    main .desctop_contact {
+    .modal .desctop_contact {
         display: none;
     }
 }
