@@ -62,7 +62,7 @@ main article section h4 {
         right: 3vw;
         bottom: -15vw;
         overflow: hidden;
-        z-index:999;
+        z-index:99;
         transition: 1s;
         -webkit-animation:top ease-in-out 5s forwards,hoverWave linear 1s infinite;
         animation:top ease-in-out 10s forwards,hoverWave linear 1s infinite;

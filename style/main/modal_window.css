@@ -40,11 +40,18 @@ box-shadow:0 3px 9px #000;
 text-shadow:0 1px 0 #fff;
 }
 
+.modal picture {
+    width:80vw;
+    max-height: 80vh;
+    overflow: auto;
+}
+
 .modal:target>div{
 -webkit-animation-name:bounce
 }
 
-.modal .text::-webkit-scrollbar {
+.modal .text::-webkit-scrollbar,
+.modal picture::-webkit-scrollbar {
   width: 0;
 }
 
