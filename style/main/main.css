@@ -58,12 +58,12 @@ main article section h4 {
         width:7vw;
         position: fixed;
         right: 3vw;
-        bottom: 3vw;
+        bottom: -10vw;
         overflow: hidden;
         z-index:999;
         transition: 1s;
-        -webkit-animation:hoverWave linear 1s infinite;
-        animation:hoverWave linear 1s infinite;
+        -webkit-animation:top ease-in-out 5s forwards,hoverWave linear 1s infinite;
+        animation:top ease-in-out 10s forwards,hoverWave linear 1s infinite;
 }
 
 .button_top a {
@@ -88,6 +88,13 @@ main article section h4 {
 }
 .button_top span:nth-child(3){
     animation-delay: -1s;
+}
+
+@keyframes top {
+    0%{bottom:-10vw}
+    50%{bottom:-10vw}
+    90%{bottom:-10vw}
+    100%{bottom:3vw}
 }
 
 @-webkit-keyframes hoverWave {
@@ -130,4 +137,5 @@ main article section h4 {
     opacity: 0;
     transform: rotate(45deg) translate(-3vw,-3vw);
 }
+
 
