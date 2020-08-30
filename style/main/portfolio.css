@@ -4,12 +4,21 @@
 
 .portfolio_work section {
     display: grid;
-    grid-template-columns: 258px minmax(300px,1fr);
+    grid-template-columns: 258px repeat(auto-fit,minmax(300px,1fr));
+    justify-content: center;
 }
 
 .portfolio_work h2 {
     text-align: center;
     margin-bottom: 2vw;
+}
+
+.portfolio_work section .work_1 {
+    display: block;
+}
+
+.portfolio_work section .work {
+    display: block;
 }
 
 .portfolio_work section .description {
