@@ -2,10 +2,18 @@
     color: #fff;
 }
 
+#portfolio .portfolio_work {
+    display: none;
+}
+
+#portfolio input:checked+article {
+    display: block;
+}
+
 .portfolio_work section {
     display: grid;
-    grid-template-columns: 258px repeat(auto-fit,minmax(300px,1fr));
-    justify-content: center;
+    grid-template-columns: 258px 1fr;
+    align-items: center;
 }
 
 .portfolio_work h2 {
@@ -19,6 +27,28 @@
 
 .portfolio_work section .work {
     display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio_work section .work .button_free {
+    position: absolute;
+    bottom: -23%;
+    left: 0;
+    padding: 10% 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.portfolio_work section .work:hover .button_free {
+    bottom: 0;
+    transition: all 1s ease-in-out;
+}
+
+.portfolio_work section .work a {
+    
 }
 
 .portfolio_work section .description {
@@ -33,3 +63,4 @@
 .portfolio_work section picture img {
     width: 100%;
 }
+

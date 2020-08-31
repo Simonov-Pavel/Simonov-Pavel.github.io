@@ -4,6 +4,12 @@
     }
 }
 
+@media (max-width: 610px) {
+    .portfolio_work section{
+        grid-template-columns: repeat(auto-fit,minmax(258px,1fr));
+    }
+}
+
 @media (max-width: 768px) {
     main .mobile_contact {
         display: flex;

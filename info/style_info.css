@@ -227,6 +227,123 @@ main article {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.button_top {
+        background:#38a3fd;
+        border:0.2vw solid #38a3fd;
+        border-radius:50%;
+        box-shadow:0 0.8vw 1vw rgba(56,163,253,0.3);
+        cursor:pointer;
+        height:7vw;
+        min-height:30px;
+        width:7vw;
+        min-width:30px;
+        position: fixed;
+        right: 3vw;
+        bottom: -15vw;
+        overflow: hidden;
+        z-index:99;
+        -webkit-transition: 1s;
+        transition: 1s;
+        -webkit-animation:top ease-in-out 5s forwards,hoverWave linear 1s infinite;
+        animation:top ease-in-out 10s forwards,hoverWave linear 1s infinite;
+}
+
+.button_top a {
+    width:100%;
+    height:100%;
+}    
+
+.button_top span {
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    border-left: 0.5vw solid #fff;
+    border-top: 0.5vw solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: arrow_top 2s infinite;
+    animation: arrow_top 2s infinite;
+    margin: -2.5vw 2vw;
+    opacity: 0;
+}
+
+.button_top span:nth-child(2){
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+.button_top span:nth-child(3){
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+@-webkit-keyframes top {
+    0%{bottom:-15vw}
+    90%{bottom:-15vw}
+    100%{bottom:3vw}
+}
+
+@keyframes top {
+    0%{bottom:-15vw}
+    90%{bottom:-15vw}
+    100%{bottom:3vw}
+}
+
+@-webkit-keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}@keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}
+
+@-webkit-keyframes arrow_top {
+    0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(5vw,5vw);
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-3vw,-3vw);
+}
+}
+
+@keyframes arrow_top {
+    0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(5vw,5vw);
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-3vw,-3vw);
+}
+}
+
 
 /*FOOTER*/
 
@@ -432,6 +549,7 @@ text-shadow:0 1px 0 #fff;
     align-items: center;
     
 }
+
 
 
 /*MEDIA*/
