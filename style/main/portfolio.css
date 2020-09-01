@@ -21,8 +21,8 @@
     margin-bottom: 2vw;
 }
 
-.portfolio_work section .work_1 {
-    display: block;
+.portfolio_work .work_1 {
+    grid-template-columns: 1fr;
 }
 
 .portfolio_work section .work {
@@ -60,7 +60,4 @@
     font-weight: 600;
 }
 
-.portfolio_work section picture img {
-    width: 100%;
-}
 
