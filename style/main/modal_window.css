@@ -11,7 +11,8 @@ background:rgba(0,0,0,.5);
 z-index:999;
 transition:opacity 511ms ease-in;
 opacity:0;
-pointer-events:none
+pointer-events:none;
+margin-bottom: 0;
 }
  
 .modal:target,
@@ -29,7 +30,7 @@ position: relative;
 
 .modal .text{
 width:80vw;
-max-height: 70vh;
+max-height: 80vh;
 overflow: auto;
 background:#fff;
 -webkit-animation:minimise 511ms linear;
