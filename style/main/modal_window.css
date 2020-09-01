@@ -30,7 +30,7 @@ position: relative;
 
 .modal .text{
 width:80vw;
-max-height: 80vh;
+max-height: 70vh;
 overflow: auto;
 background:#fff;
 -webkit-animation:minimise 511ms linear;
@@ -43,7 +43,7 @@ text-shadow:0 1px 0 #fff;
 
 .modal picture {
     width:80vw;
-    max-height: 80vh;
+    max-height: 70vh;
     overflow: auto;
 }
 
