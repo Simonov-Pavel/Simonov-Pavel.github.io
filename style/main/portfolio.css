@@ -31,6 +31,10 @@
     overflow: hidden;
 }
 
+.portfolio_work div{
+    margin-bottom: 0;
+}
+
 .portfolio_work section .work .button_free {
     position: absolute;
     bottom: -23%;
