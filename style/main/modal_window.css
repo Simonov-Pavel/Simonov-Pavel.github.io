@@ -1,7 +1,7 @@
 .modal {
 display: flex;
 justify-content: center;
-align-items: flex-end;
+align-items: center;
 position:fixed;
 top:0;
 left:0;
@@ -30,7 +30,7 @@ position: relative;
 
 .modal .text{
 width:80vw;
-max-height: 70vh;
+max-height: 80vh;
 overflow: auto;
 background:#fff;
 -webkit-animation:minimise 511ms linear;
@@ -43,7 +43,7 @@ text-shadow:0 1px 0 #fff;
 
 .modal picture {
     width:80vw;
-    max-height: 70vh;
+    max-height: 80vh;
     overflow: auto;
 }
 
