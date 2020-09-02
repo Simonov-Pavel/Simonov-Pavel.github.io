@@ -2,6 +2,17 @@
     color: #fff;
 }
 
+#portfolio label {
+    display: inline-block;
+    padding: 2vw;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#portfolio label:hover {
+    color: #337AB7;
+}
+
 #portfolio .portfolio_work {
     display: none;
 }
