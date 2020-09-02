@@ -1,18 +1,12 @@
 @media (max-width: 750px) {
-    .portfolio_work section .description{
+    #portfolio section .description{
         display: none;
     }
-    .portfolio_work section {
+    #portfolio section {
         display: block;
     }
-    .portfolio_work .work_1 {
+    #portfolio .work_1 {
     grid-template-columns: repeat(auto-fit,minmax(129px,1fr));
-    }
-}
-
-@media (max-width: 610px) {
-    .portfolio_work section{
-        grid-template-columns: repeat(auto-fit,minmax(258px,1fr));
     }
 }
 
