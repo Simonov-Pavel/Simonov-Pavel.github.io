@@ -40,6 +40,14 @@
     grid-template-columns: 1fr;
 }
 
+#portfolio .portfolio_index section{
+    display: block;
+}
+
+#portfolio .portfolio_index {
+    grid-template-columns: repeat(auto-fit,minmax(20vw,1fr));
+}
+
 #portfolio section .work {
     position: relative;
     overflow: hidden;
