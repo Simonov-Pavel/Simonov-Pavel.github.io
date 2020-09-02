@@ -12,8 +12,12 @@
 
 .portfolio_work section {
     display: grid;
-    grid-template-columns: 258px 1fr;
+    grid-template-columns: 20vw 1fr;
     align-items: center;
+}
+
+.portfolio_work section img {
+    width: 100%;
 }
 
 .portfolio_work h2 {
@@ -26,7 +30,7 @@
 }
 
 .portfolio_work section .work {
-    display: block;
+    
     position: relative;
     overflow: hidden;
 }
