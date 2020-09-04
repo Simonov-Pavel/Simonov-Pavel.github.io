@@ -8,6 +8,9 @@
     #portfolio .work_1 {
     grid-template-columns: repeat(auto-fit,minmax(129px,1fr));
     }
+    main article div {
+        grid-template-columns: repeat(auto-fit,minmax(138px,1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -20,7 +23,5 @@
 }
 
 @media (max-width: 480px) {
-    main article div {
-        grid-template-columns: repeat(auto-fit,minmax(138px,1fr));
-    }
+    
 }
