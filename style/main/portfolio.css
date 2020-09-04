@@ -86,4 +86,10 @@
     font-weight: 600;
 }
 
+#portfolio .more {
+    text-align: center;
+}
 
+#portfolio .more a {
+    margin: 2vw 0;
+}
