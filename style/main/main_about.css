@@ -49,6 +49,7 @@ main #about #skills section div {
 main #about #skills .section {
     background: #fff;
     display: grid;
+    align-content: center;
     height: 100%;
     border: none;
     border-radius: 1vw;
