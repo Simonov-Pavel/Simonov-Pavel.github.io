@@ -73,13 +73,13 @@
     transition: all 1s ease-in-out;
 }
 
-#portfolio section .work a {
-    
-}
-
 #portfolio section .description {
     padding: 0 2vw;
     display: block;
+}
+
+#portfolio section .description a {
+    margin: 4vw 2vw 0;
 }
 
 #portfolio section .description span {
